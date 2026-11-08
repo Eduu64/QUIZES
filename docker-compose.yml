@@ -1,0 +1,16 @@
+services:
+  quizbox:
+    build: .
+    container_name: quizbox
+    restart: unless-stopped
+    ports:
+      - "8080:8080"          # mejor: "192.168.1.50:8080:8080" (IP LAN de tu servidor)
+    volumes:
+      - ./data:/data          # tus quizzes: son archivos .json normales
+    environment:
+      # - ADMIN_PASS=cambiame  # opcional: pide contraseña (usuario: cualquiera)
+      - TZ=Europe/Madrid
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 64m

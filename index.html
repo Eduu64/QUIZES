@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuizBox</title>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--mu:#6b7280;--bd:#e2e2e2;--ac:#2563eb;--ok:#16a34a;--ko:#dc2626;--card:#f5f5f5}
+@media(prefers-color-scheme:dark){:root{--bg:#121212;--fg:#eee;--mu:#9ca3af;--bd:#333;--ac:#60a5fa;--card:#1c1c1c}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--fg)}
+main{max-width:720px;margin:0 auto;padding:16px}
+h1{font-size:1.3rem;margin:.2em 0}
+button,input,textarea{font:inherit;color:inherit}
+button{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:8px 12px;cursor:pointer}
+button.p{background:var(--ac);color:#fff;border-color:var(--ac)}
+button.x{padding:4px 8px}
+input[type=text],textarea{width:100%;background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:8px}
+textarea{min-height:240px;font-family:ui-monospace,monospace;font-size:.85rem}
+.row{display:flex;gap:8px;align-items:center;margin:8px 0;flex-wrap:wrap}
+.item{display:flex;gap:8px;align-items:center;padding:10px;border:1px solid var(--bd);border-radius:10px;margin:6px 0;background:var(--card)}
+.item .t{flex:1;cursor:pointer;min-width:0}
+.item small{color:var(--mu);display:block;overflow:hidden;text-overflow:ellipsis}
+.opt{display:block;width:100%;text-align:left;margin:6px 0;padding:12px}
+.opt.sel{border-color:var(--ac);outline:2px solid var(--ac)}
+.opt.ok{background:color-mix(in srgb,var(--ok) 25%,var(--bg));border-color:var(--ok)}
+.opt.ko{background:color-mix(in srgb,var(--ko) 25%,var(--bg));border-color:var(--ko)}
+.bar{height:6px;background:var(--bd);border-radius:3px;margin:8px 0}.bar i{display:block;height:100%;background:var(--ac);border-radius:3px}
+.mu{color:var(--mu)}.err{color:var(--ko)}
+.exp{padding:10px;border-left:3px solid var(--ac);background:var(--card);margin:10px 0}
+a{color:var(--ac);cursor:pointer}
+</style>
+<main id="app"></main>
+<script>
+const app=document.getElementById('app');
+const api=async(u,o)=>{const r=await fetch(u,o);if(!r.ok)throw new Error(await r.text());return r.status==204?null:r.json()};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const q=encodeURIComponent, par=p=>p.includes('/')?p.slice(0,p.lastIndexOf('/')):'';
+const base=p=>p.slice(p.lastIndexOf('/')+1);
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const slug=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'quiz';
+let dir='',tree=[];
+
+const PROMPT=`Créame un quiz sobre [TEMA] con [N] preguntas de dificultad [nivel].
+Responde SOLO con un JSON válido (sin texto extra ni bloques de código) con este formato exacto:
+{"title":"Título del quiz","questions":[{"q":"Enunciado","options":["A","B","C","D"],"answer":1,"explanation":"Por qué es correcta"}]}
+Reglas: "answer" es el índice (empezando en 0) de la opción correcta; si hay varias correctas usa una lista, p.ej. [0,2]. Incluye siempre "explanation".`;
+
+async function home(){
+  tree=await api('/api/tree');
+  const here=tree.filter(e=>par(e.path)===dir);
+  const crumbs=['<a onclick="dir=\'\';home()">Inicio</a>',...dir.split('/').filter(Boolean).map((s,i,a)=>{const p=a.slice(0,i+1).join('/');return `<a onclick="dir='${p}';home()">${esc(s)}</a>`})].join(' / ');
+  app.innerHTML=`<h1>QuizBox</h1><div class="mu">${crumbs}</div>
+  <div class="row"><button onclick="newFolder()">+ Carpeta</button><button class="p" onclick="importView()">⬆ Importar quiz</button></div>
+  ${here.map(e=>e.dir?`<div class="item"><div class="t" onclick="dir='${e.path}';home()">📁 ${esc(base(e.path))}</div>
+    <button class="x" onclick="mv('${e.path}')">✏️</button><button class="x" onclick="delF('${e.path}')">🗑</button></div>`
+  :`<div class="item"><div class="t" onclick="start('${e.path}')">${esc(e.title||base(e.path))}<small>${esc(base(e.path))} · ${e.N} preguntas</small></div>
+    <button class="x" onclick="mv('${e.path}')">✏️</button><button class="x" onclick="delQ('${e.path}')">🗑</button></div>`).join('')||'<p class="mu">Vacío. Importa tu primer quiz.</p>'}`;
+}
+const run=async f=>{try{await f();await home()}catch(e){alert(e.message)}};
+const newFolder=()=>{const n=prompt('Nombre de la carpeta');if(n)run(()=>api('/api/folder?path='+q((dir?dir+'/':'')+n),{method:'POST'}))};
+const delF=p=>confirm('¿Borrar carpeta y TODO su contenido?')&&run(()=>api('/api/folder?path='+q(p),{method:'DELETE'}));
+const delQ=p=>confirm('¿Borrar este quiz?')&&run(()=>api('/api/quiz?path='+q(p),{method:'DELETE'}));
+const mv=p=>{const n=prompt('Nueva ruta (puedes cambiar carpeta/nombre)',p);if(n&&n!==p)run(()=>api(`/api/move?from=${q(p)}&to=${q(n)}`,{method:'POST'}))};
+
+function importView(){
+  app.innerHTML=`<h1>Importar quiz</h1><p class="mu">Carpeta: /${esc(dir)}</p>
+  <div class="row"><button onclick="navigator.clipboard.writeText(PROMPT).then(()=>alert('Prompt copiado. Pégalo en tu IA.'))">📋 Copiar prompt para la IA</button>
+  <input type="file" id="f" accept=".json,application/json"></div>
+  <textarea id="j" placeholder='Pega aquí el JSON que te dio la IA'></textarea>
+  <div class="row"><input type="text" id="n" placeholder="Nombre de archivo (opcional)"></div>
+  <p class="err" id="e"></p>
+  <div class="row"><button class="p" onclick="save()">Guardar</button><button onclick="home()">Cancelar</button></div>`;
+  document.getElementById('f').onchange=async e=>{document.getElementById('j').value=await e.target.files[0].text()};
+}
+async function save(){
+  const e=document.getElementById('e');e.textContent='';
+  let t=document.getElementById('j').value.trim().replace(/^```(json)?|```$/g,'').trim(),o;
+  try{o=JSON.parse(t)}catch(x){e.textContent='JSON inválido: '+x.message;return}
+  let n=document.getElementById('n').value.trim()||slug(o.title||'');
+  if(!n.endsWith('.json'))n+='.json';
+  try{await api('/api/quiz?path='+q((dir?dir+'/':'')+n),{method:'PUT',body:JSON.stringify(o)});home()}catch(x){e.textContent=x.message}
+}
+
+// ---------- Jugar ----------
+let G;
+async function start(p){
+  const d=await api('/api/quiz?path='+q(p));
+  G={path:p,title:d.title,all:d.questions,mix:false};
+  app.innerHTML=`<h1>${esc(d.title)}</h1><p class="mu">${d.questions.length} preguntas</p>
+  <label><input type="checkbox" id="m"> Mezclar preguntas y opciones</label>
+  <div class="row"><button class="p" onclick="begin(G.all,document.getElementById('m').checked)">Empezar</button><button onclick="home()">Volver</button></div>`;
+}
+function begin(qs,mix){
+  G.qs=(mix?shuffle(qs):qs).map(x=>{
+    const ans=[].concat(JSON.parse(JSON.stringify(x.answer)));
+    let idx=x.options.map((_,i)=>i);if(mix)idx=shuffle(idx);
+    return{...x,options:idx.map(i=>x.options[i]),ans:ans.map(a=>idx.indexOf(a)),src:x}});
+  G.i=0;G.score=0;G.wrong=[];ask();
+}
+function ask(){
+  const x=G.qs[G.i],multi=x.ans.length>1;G.sel=new Set();G.done=false;
+  app.innerHTML=`<div class="mu">${G.title} · ${G.i+1}/${G.qs.length}</div><div class="bar"><i style="width:${G.i/G.qs.length*100}%"></i></div>
+  <h2>${esc(x.q)}</h2>${multi?'<p class="mu">Hay varias respuestas correctas</p>':''}
+  ${x.options.map((o,i)=>`<button class="opt" id="o${i}" onclick="pick(${i})">${esc(o)}</button>`).join('')}
+  <div id="fb"></div><div class="row"><button class="p" id="go" onclick="check()">Comprobar</button><button onclick="home()">Salir</button></div>`;
+}
+function pick(i){
+  if(G.done)return;const x=G.qs[G.i];
+  if(x.ans.length>1){G.sel.has(i)?G.sel.delete(i):G.sel.add(i)}else{G.sel=new Set([i])}
+  x.options.forEach((_,k)=>document.getElementById('o'+k).classList.toggle('sel',G.sel.has(k)));
+}
+function check(){
+  const x=G.qs[G.i];
+  if(G.done){G.i++;return G.i<G.qs.length?ask():end()}
+  if(!G.sel.size)return;
+  G.done=true;
+  const ok=G.sel.size===x.ans.length&&x.ans.every(a=>G.sel.has(a));
+  ok?G.score++:G.wrong.push(x.src);
+  x.options.forEach((_,k)=>{const b=document.getElementById('o'+k);b.classList.remove('sel');
+    if(x.ans.includes(k))b.classList.add('ok');else if(G.sel.has(k))b.classList.add('ko')});
+  document.getElementById('fb').innerHTML=`<p><b class="${ok?'':'err'}" style="${ok?'color:var(--ok)':''}">${ok?'✔ Correcto':'✘ Incorrecto'}</b></p>`+(x.explanation?`<div class="exp">${esc(x.explanation)}</div>`:'');
+  document.getElementById('go').textContent=G.i+1<G.qs.length?'Siguiente':'Ver resultado';
+}
+function end(){
+  const n=G.qs.length,pc=Math.round(G.score/n*100);
+  app.innerHTML=`<h1>Resultado</h1><h2>${G.score}/${n} (${pc}%)</h2>
+  <div class="row">${G.wrong.length?`<button class="p" onclick="begin(G.wrong,true)">Repetir falladas (${G.wrong.length})</button>`:''}
+  <button onclick="begin(G.all,true)">Repetir todo</button><button onclick="home()">Inicio</button></div>`;
+}
+home().catch(e=>app.textContent=e.message);
+</script>
+</html>
