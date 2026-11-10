@@ -1,0 +1,585 @@
+{
+ "title": "ITA Informática 2024 - Promoción Interna",
+ "questions": [
+  {
+   "q": "1. En SQL ¿Qué comando se utiliza para consultar datos en una tabla?",
+   "options": [
+    "SELECT",
+    "QUERY",
+    "GET",
+    "EXTRACT"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "2. Para el algoritmo de búsqueda lineal. ¿Cuál es su complejidad ciclomática?",
+   "options": [
+    "O(1)",
+    "O(log n)",
+    "O(n)",
+    "O(n^2)"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "3. ¿Qué caracteriza al algoritmo de planificación FCFS?",
+   "options": [
+    "Los procesos con mayor tiempo de CPU tienen prioridad",
+    "El primer proceso que llega es el primero en ser ejecutado",
+    "Los procesos más pequeños se ejecutan primero",
+    "Los procesos se ejecutan en orden aleatorio"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "4. ¿Qué resultado dará el siguiente código en Java?\nint a = 3;\nint b = 4;\nint c = a * b;\nSystem.out.println(b);",
+   "options": [
+    "3",
+    "4",
+    "7",
+    "12"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "5. Durante el ciclo de vida de una aplicación ¿Cuál es la importancia de la documentación?",
+   "options": [
+    "Solo es necesaria en la fase de diseño",
+    "Facilita el mantenimiento y la formación",
+    "No tiene relevancia",
+    "Solo es importante para el usuario final"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "6. En un sistema informático. ¿Cuál es la función de la placa base?",
+   "options": [
+    "Almacenar datos permanentemente",
+    "Procesar gráficos",
+    "Conectar y permitir la comunicación entre los componentes",
+    "Suministrar energía"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "7. ¿Qué es un compilador?",
+   "options": [
+    "Un programa que traduce código fuente a código máquina",
+    "Un programa que permite depurar código en tiempo de ejecución",
+    "Un programa que ejecuta instrucciones sin necesidad de compilar el código primero",
+    "Un programa que traduce el código fuente a código intermedio para ser ejecutado por una máquina virtual"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "8. ¿Cuál es la primera fase del ciclo de vida de una aplicación?",
+   "options": [
+    "Mantenimiento",
+    "Diseño",
+    "Desarrollo",
+    "Requisitos"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "9. ¿Cuál es la capa que proporciona el protocolo TCP?",
+   "options": [
+    "Capa de Red",
+    "Capa de Transporte",
+    "Capa de Aplicación",
+    "Capa de Enlace de Datos"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "10. En una Base de Datos Relacional ¿Qué es una \"consulta\"?",
+   "options": [
+    "Un procedimiento almacenado periódico",
+    "Un comando para modificar la estructura de las tablas",
+    "Un comando que solicita datos de una o más tablas",
+    "Un conjunto de transacciones que se ejecutan de manera conjunta"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "11. ¿Qué caracteriza a un lenguaje de programación de alto nivel?",
+   "options": [
+    "Está más cerca del hardware y es más difícil de entender",
+    "Utiliza un conjunto muy limitado de instrucciones",
+    "Tiene una sintaxis cercana a la del lenguaje humano y es más fácil de usar",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "12. ¿Quién desarrolló el concepto de la \"máquina de Turing\"?",
+   "options": [
+    "Alan Turing",
+    "John von Neumann",
+    "Ada Lovelace",
+    "Bill Gates"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "13. ¿Cuál de las siguientes es una característica del modelo en espiral?",
+   "options": [
+    "Desarrollo rápido de prototipos",
+    "Evaluación de riesgos",
+    "Proceso secuencial estricto",
+    "Uso exclusivo de metodologías ágiles"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "14. ¿Cuál de los siguientes es un lenguaje de programación de bajo nivel?",
+   "options": [
+    "Python",
+    "Java",
+    "C",
+    "JavaScript"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "15. ¿Cuál es el propósito de las pruebas de unidad?",
+   "options": [
+    "Probar la aplicación como un todo",
+    "Probar componentes individuales",
+    "Probar la interfaz de usuario",
+    "Probar la documentación"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "16. Para proyectos con requisitos bien definidos y sin cambios frecuentes ¿Qué modelo de desarrollo es más adecuado?",
+   "options": [
+    "Modelo ágil",
+    "Modelo en cascada",
+    "Modelo de prototipos",
+    "Modelo en espiral"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "17. En SQL ¿Qué significa DDL?",
+   "options": [
+    "Data Definition Language",
+    "Data Display Language",
+    "Data Description Language",
+    "Data Deletion Language"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "18. ¿Qué tipo de memoria es volátil?",
+   "options": [
+    "ROM",
+    "Flash",
+    "RAM",
+    "HDD"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "19. ¿Qué fase del ciclo de vida se centra en encontrar errores en la aplicación?",
+   "options": [
+    "Mantenimiento",
+    "Implementación",
+    "Pruebas",
+    "Análisis"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "20. ¿Cuál es la función principal de un antivirus?",
+   "options": [
+    "Filtrar el tráfico de la red",
+    "Encriptar los datos",
+    "Detectar y eliminar malware",
+    "Gestionar contraseñas"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "21. ¿Cuál de las siguientes técnicas de prueba se utilizan para encontrar errores de validación del software?",
+   "options": [
+    "Pruebas de caja negra",
+    "Pruebas de caja blanca",
+    "Pruebas basadas en riesgos",
+    "Todas las anteriores"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "22. ¿Cuántas capas tiene el modelo OSI?",
+   "options": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "23. En la capa de red del modelo TCP/IP ¿Qué protocolo se utiliza para direccionamiento y enrutamiento?",
+   "options": [
+    "FTP",
+    "TCP",
+    "IP",
+    "HTTP"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "24. ¿Qué es un \"estilo\" en Word?",
+   "options": [
+    "Un tipo de fuente",
+    "Un formato predefinido para textos y párrafos",
+    "Un tipo de gráfico",
+    "Un color de fondo de página"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "25. ¿Cómo se delimitan los comentarios en html?",
+   "options": [
+    "Se colocan entre /* y */",
+    "Se colocan poniendo al inicio de la línea #*",
+    "Se colocan entre <!-- y -->",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "26. ¿Cuál es la principal diferencia entre el desarrollo ágil y el modelo en cascada?",
+   "options": [
+    "El modelo ágil usa fases de planificación más estrictas.",
+    "El modelo ágil permite un enfoque iterativo y flexible, mientras que el modelo en cascada sigue un enfoque lineal y secuencial.",
+    "El modelo ágil utiliza una sola fase de desarrollo.",
+    "El modelo en cascada permite un mayor nivel de colaboración entre el equipo y los clientes."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "27. ¿Cuál es el propósito de un algoritmo de cifrado?",
+   "options": [
+    "Mejorar la velocidad de procesamiento",
+    "Ordenar los datos",
+    "Proteger la información",
+    "Facilitar la búsqueda de datos"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "28. ¿Cuál de los siguientes dispositivos no tiene capacidad de filtrado de tráfico?",
+   "options": [
+    "Switch",
+    "Router",
+    "Hub",
+    "Firewall"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "29. En el desarrollo del software ¿Qué representa el término \"ciclo de vida\"?",
+   "options": [
+    "El tiempo que pasa una aplicación en el mercado",
+    "Las fases por las que pasa una aplicación desde su concepción hasta su retiro",
+    "El tiempo de desarrollo",
+    "La duración del mantenimiento"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "30. ¿Qué es la inteligencia artificial (IA)?",
+   "options": [
+    "Una red de computadoras",
+    "La capacidad de las máquinas para realizar tareas que normalmente requieren inteligencia humana",
+    "Un software antivirus",
+    "Una plataformas de red social"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "31. ¿Qué es una referencia absoluta en Excel?",
+   "options": [
+    "Es una referencia que cambia automáticamente cuando se copia una celda",
+    "Es una referencia que permanece fija cuando se copia una celda",
+    "Es una referencia a una celda en otra hoja",
+    "Es una referencia a una celda de solo lectura"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "32. En el contexto de la seguridad de redes ¿Qué es un firewall?",
+   "options": [
+    "Un dispositivo que mejora la velocidad de la red",
+    "Un software que protege contra virus",
+    "Un sistema que controla el tráfico de red según reglas de seguridad",
+    "Un software de encriptación"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "33. En una Base de Datos Relacional ¿Qué es una clave foránea?",
+   "options": [
+    "Una columna que se usa para garantizar la integridad de los datos",
+    "Una columna que se utiliza para relacionar una tabla con otra",
+    "Una clave única en una tabla",
+    "Una clave de acceso rápido a la base de datos"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "34. Acerca de algoritmos de planificación ¿Cuál es la ventaja del algoritmo \"Round Robin\" sobre el algoritmo FCFS?",
+   "options": [
+    "Round Robin evita que un proceso monopolice la CPU durante mucho tiempo",
+    "Round Robin siempre es más rápido que FCFS",
+    "FCFS prioriza más los procesos largos",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "35. ¿Qué es la \"biometría\"?",
+   "options": [
+    "Un tipo de virus informático",
+    "Un sistema de seguridad que usa características físicas o comportamentales para identificar a las personas",
+    "Una herramienta de análisis de datos biológicos",
+    "Un tipo de software de edición de imágenes"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "36. ¿Cuál de los siguientes dispositivos se utiliza principalmente para la entrada de datos?",
+   "options": [
+    "Monitor",
+    "Teclado",
+    "Impresora",
+    "Disco duro"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "37. ¿Qué beneficio tiene realizar pruebas de validación?",
+   "options": [
+    "Aumentar el tiempo de desarrollo",
+    "Reducir el costo del mantenimiento",
+    "Aumentar el número de errores encontrados",
+    "Ninguno de los anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "38. ¿Qué opción de Word permite ver cómo se vería un documento impreso antes de imprimirlo?",
+   "options": [
+    "Vista de borrador",
+    "Vista de lectura",
+    "Vista de esquema",
+    "Vista previa de impresión"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "39. ¿Qué es el phishing?",
+   "options": [
+    "Un tipo de malware",
+    "Un ataque que busca robar información personal a través de engaños",
+    "Un método de encriptación",
+    "Un protocolo de seguridad"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "40. ¿Qué empresa lanzó el primer sistema operativo Windows?",
+   "options": [
+    "IBM",
+    "Microsoft",
+    "Apple",
+    "Sun Microsystems"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "41. En programación ¿Qué es una \"variable global\"?",
+   "options": [
+    "Una variable que solo puede ser utilizada dentro de una función",
+    "Una variable que puede ser accedida desde cualquier parte del programa",
+    "Una variable que debe ser declarada por cada función antes de su uso",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "42. ¿Cuál es la principal característica del modelo en cascada?",
+   "options": [
+    "Iteración constante",
+    "Fases secuenciales",
+    "Desarrollo basado en prototipos",
+    "Pruebas continuas"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "43. ¿Cómo se denomina la entidad que se puede asignar o ejecutar en un procesador?",
+   "options": [
+    "Operación",
+    "Proceso",
+    "Registro",
+    "Segmento"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "44. ¿Cómo se puede insertar una tabla en un documento de Word?",
+   "options": [
+    "Desde la pestaña \"Vista\"",
+    "Desde la pestaña \"Diseño\"",
+    "Desde la pestaña \"Insertar\"",
+    "Desde la pestaña \"Revisar\""
+   ],
+   "answer": 2
+  },
+  {
+   "q": "45. En programación ¿Qué es un \"algoritmo\"?",
+   "options": [
+    "Un tipo de variable que almacena información",
+    "Un conjunto de instrucciones que se siguen para resolver un problema",
+    "Un error que ocurre durante la ejecución del programa",
+    "Un tipo de lenguaje de programación"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "46. Acerca del Modelo OSI ¿Qué significa la sigla \"OSI\"?",
+   "options": [
+    "Open Source Internet",
+    "Open Systems Interconnection",
+    "Online System Integration",
+    "Open Software Integration"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "47. ¿Cómo se denomina al indicador cualitativo del grado en el que un módulo está conectado con otros y con el mundo exterior?",
+   "options": [
+    "Cohesión",
+    "Acoplamiento",
+    "Ocultamiento",
+    "Independencia estructural"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "48. ¿Qué valores puede tomar un bit?",
+   "options": [
+    "De 0 a 9",
+    "De A a F",
+    "0 ó 1",
+    "Ninguna es correcta"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "49. ¿Qué significa \"compilar\" un programa?",
+   "options": [
+    "Transformar el código fuente a un formato de lenguaje natural",
+    "Traducir el código fuente a un formato ejecutable que puede ser entendido por la computadora",
+    "Corregir errores de lógica en el código",
+    "Optimizar el código para que sea más eficiente"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "50. ¿Qué es un algoritmo recursivo?",
+   "options": [
+    "Aquel que se ejecuta en bucle",
+    "Aquel que se llama a sí mismo",
+    "Aquel que no termina",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "51. En programación orientada a objetos ¿Qué es la \"abstracción\"?",
+   "options": [
+    "El proceso de ocultar los detalles de implementación y mostrar solo las funcionalidades esenciales",
+    "El proceso de convertir una clase en una interfaz",
+    "El proceso de cambiar dinámicamente los atributos de un objeto",
+    "El proceso de combinar varias clases en una sola clase"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "52. ¿Qué es la autenticación?",
+   "options": [
+    "Un proceso de encriptación de datos",
+    "Un proceso que verifica la identidad de un usuario o dispositivo",
+    "Un método de filtrado de tráfico",
+    "Un protocolo de red"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "53. ¿Cuál es la capa más baja del modelo OSI?",
+   "options": [
+    "Capa de Enlace de Datos",
+    "Capa Física",
+    "Capa de Red",
+    "Capa de Aplicación"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "54. En un modelo de procesos del sistema operativo de 5 estados. ¿Qué indica que un proceso esté en el estado \"Listo\"?",
+   "options": [
+    "Que está en ejecución",
+    "Que ha terminado",
+    "Que está disponible para ser ejecutado",
+    "Que está esperando por un recurso"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "55. En programación orientada a objetos ¿Qué es la herencia?",
+   "options": [
+    "La capacidad de una clase de tener una única instancia",
+    "El proceso de crear clases dentro de otras clases",
+    "El mecanismo mediante el cual una clase puede adquirir características de otra clase",
+    "La capacidad de un objeto de contener otros objetos"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "56. [RESERVA] En el modelo OSI ¿Qué capa maneja los flujos de datos y garantiza que los mensajes lleguen sin errores, en orden y sin pérdidas?",
+   "options": [
+    "Capa de Transporte",
+    "Capa de Red",
+    "Capa de Enlace de Datos",
+    "Capa Física"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "57. [RESERVA] ¿Cuál es el motivo por el que se realizan las pruebas de validación?",
+   "options": [
+    "Para encontrar errores en el código",
+    "Para verificar que se cumplen los requisitos del usuario",
+    "Para comprobar la documentación del software",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "58. [RESERVA] En una red. ¿Cuál es la función principal de un switch?",
+   "options": [
+    "Conectar diferentes redes",
+    "Filtrar y enviar paquetes de datos a dispositivos específicos",
+    "Proporcionar acceso a internet",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  }
+ ]
+}

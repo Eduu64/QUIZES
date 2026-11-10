@@ -1,0 +1,737 @@
+{
+ "title": "ITA Informática 2023 - Acceso Libre",
+ "questions": [
+  {
+   "q": "1. El Foro de Gobierno Abierto es:",
+   "options": [
+    "Un grupo de trabajo del que forman parte los responsables de las Unidades de Información de Transparencia y de Gobierno Abierto de todos los ministerios.",
+    "Un espacio de diálogo y debate en el que participan, con igual número de representantes, las Administraciones públicas (estatal, autonómicas y locales) y representantes de la sociedad civil",
+    "Un espacio de coordinación, colaboración y debates entre las Administraciones públicas españolas para el intercambio de experiencias y el desarrollo y seguimiento de iniciativas conjuntas en materia de gobierno abierto.",
+    "La denominación de la Comisión Interministerial de Subsecretarios del Gobierno."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "2. En caso de incumplimiento parcial o defectuoso, los pliegos podrán prever penalidades. Estas penalidades deberán ser proporcionales a la gravedad del incumplimiento y las cuantías de cada una de ellas no podrán ser superiores al:",
+   "options": [
+    "10 por ciento del precio del contrato, IVA excluido, ni el total de las mismas superar el 50 por cien del precio del contrato.",
+    "10 por ciento del precio del contrato, IVA incluido, ni el total de las mismas superar el 50 por cien del precio del contrato.",
+    "20 por ciento del precio del contrato, IVA excluido, ni el total de las mismas superar el 50 por cien del precio del contrato.",
+    "20 por ciento del precio del contrato, IVA incluido, ni el total de las mismas superar el 50 por cien del precio del contrato."
+   ],
+   "answer": 0
+  },
+  {
+   "q": "3. De conformidad con la Ley 9/2017, de 8 de noviembre, de Contratos de Sector Público, se considera como procedimiento ordinario de adjudicación:",
+   "options": [
+    "Procedimiento con negociación.",
+    "Procedimiento restringido.",
+    "Dialogo Competitivo.",
+    "Contrato menor."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "4. Indique qué características se corresponde con las Entidades Públicas Empresariales en el ámbito Estatal:",
+   "options": [
+    "Entidades de Derecho Público, con personalidad jurídica propia, patrimonio propio y autonomía en su gestión.",
+    "Entidades de Derecho Privado, con una dependencia funcional de la Administración General del Estado o de un Organismo autónomo vinculado o dependiente de esta, al que le corresponde la dirección estratégica.",
+    "Con las excepciones previstas por diferentes Leyes, las Entidades Públicas Empresariales se rigen por el Derecho privado.",
+    "Las respuestas a) y c) son correctas."
+   ],
+   "answer": 3
+  },
+  {
+   "q": "5. Los Organismos autónomos estatales:",
+   "options": [
+    "Son autoridades administrativas independientes de ámbito estatal las entidades de derecho público que, vinculadas a la Administración General del Estado y con personalidad jurídica propia, tienen atribuidas funciones de regulación o supervisión de carácter externo",
+    "Son entidades de derecho público, dotadas de personalidad jurídica pública, patrimonio propio y autonomía en su gestión, facultadas para ejercer potestades administrativas.",
+    "Son entidades de derecho público, con personalidad jurídica propia, tesorería y patrimonio propio y autonomía en su gestión, que desarrollan actividades propias de la Administración Pública.",
+    "Son entidades de derecho público, con personalidad jurídica propia y diferenciada, creadas por varias Administraciones Públicas o entidades integrantes del sector público institucional, entre sí o con participación de entidades privadas, para el desarrollo de actividades de interés común a todas ellas dentro de sus competencias."
+   ],
+   "answer": 2
+  },
+  {
+   "q": "6. Según el artículo 37 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, las resoluciones administrativas que vulneren lo establecido en una disposición reglamentaria serán:",
+   "options": [
+    "Nulas",
+    "Anulables",
+    "Convalidables, una vez queden subsanados los vicios de que adolezcan.",
+    "Válidos, sin perjuicio de las responsabilidades que puedan derivarse."
+   ],
+   "answer": 0
+  },
+  {
+   "q": "7. De acuerdo con el art. 39 de la Ley 39/2015, los actos de las Administraciones Públicas sujetas al Derecho Administrativo se presumirán válidos y producirán efectos desde:",
+   "options": [
+    "La publicación en el diario o boletín correspondiente, o desde el día siguiente a su notificación.",
+    "La fecha en que se dicten, salvo que en ellos se disponga otra cosa.",
+    "Desde el mismo día de su notificación a los interesados.",
+    "Desde el día 1 del mes siguiente a su publicación en boletín o notificación a los interesados."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "8. Las Leyes que aprueban los Estatutos de Autonomía son:",
+   "options": [
+    "Leyes Ordinarias.",
+    "Leyes Orgánicas.",
+    "Ley de bases estatal.",
+    "Reales Decretos."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "9. Los Decretos-Legislativos son:",
+   "options": [
+    "Disposiciones emanadas del Poder Ejecutivo con fuerza y rango de Ley a partir de la delegación previa realizada por las Cortes a favor del Gobierno para el dictado de un Texto Refundido o Texto Articulado.",
+    "Reglamentos emanados del Poder Ejecutivo que regulan el funcionamiento y organización de la Administración Pública.",
+    "Disposiciones emanadas del Poder Legislativo que siguen el trámite parlamentario ordinario de elaboración de las normas, pudiendo ser aprobadas en Pleno o en Comisión.",
+    "Disposiciones emanadas del Poder Presidente del Gobierno que tienen carácter de norma básica y se dicta, al amparo de las competencias que atribuye al Estado el artículo 149.1.30.ª de la Constitución Española."
+   ],
+   "answer": 0
+  },
+  {
+   "q": "10. De acuerdo con lo dispuesto en el artículo 3 de la Ley 4/2023, de 28 de febrero, se entiende por Bifobia:",
+   "options": [
+    "Toda actitud, conducta o discurso de rechazo, repudio, prejuicio, discriminación o intolerancia hacia las personas trans por el hecho de serlo, o ser percibidas como tales.",
+    "Toda actitud, conducta o discurso de rechazo, repudio, prejuicio, discriminación o intolerancia hacia las personas LGTBI por el hecho de serlo, o ser percibidas como tales.",
+    "Toda actitud, conducta o discurso de rechazo, repudio, prejuicio, discriminación o intolerancia hacia las personas homosexuales por el hecho de serlo, o ser percibidas como tales.",
+    "Toda actitud, conducta o discurso de rechazo, repudio, prejuicio, discriminación o intolerancia hacia las personas bisexuales por el hecho de serlo, o ser percibidas como tales"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "11. En SQL, ¿Qué cláusula se utiliza para ordenar los resultados de una consulta?",
+   "options": [
+    "ORDER BY",
+    "GROUP BY",
+    "SORT BY",
+    "ARRANGE BY"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "12. En SQL, ¿Cuál es la diferencia entre INNER JOIN y LEFT JOIN?",
+   "options": [
+    "INNER JOIN devuelve todas las filas de ambas tablas, LEFT JOIN devuelve solo las filas que cumplen la condición de unión",
+    "LEFT JOIN devuelve todas las filas de la tabla de la izquierda y las coincidentes de la derecha, INNER JOIN devuelve solo las filas que cumplen la condición de unión",
+    "No hay diferencia, son sinónimos",
+    "INNER JOIN devuelve solo las filas que cumplen la condición de unión, LEFT JOIN devuelve todas las filas de ambas tablas"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "13. En el lenguaje NATURAL, ¿Qué hace el comando ESCAPE?",
+   "options": [
+    "Salir de un bucle",
+    "Iniciar una estructura condicional",
+    "Manejar condiciones de error",
+    "No existe el comando ESCAPE en Natural"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "14. ¿Cuál de los siguientes algoritmos no es de cifrado simétrico?",
+   "options": [
+    "DES",
+    "AES",
+    "SCA",
+    "Ninguno de los algoritmos anteriores es de cifrado simétrico"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "15. En programación orientada a objetos, ¿Qué es el polimorfismo?",
+   "options": [
+    "La capacidad de una clase para ocultar sus detalles de implementación.",
+    "La práctica de combinar múltiples tipos de datos en una sola estructura.",
+    "La capacidad de una función para aceptar diferentes tipos de parámetros.",
+    "La habilidad de una clase para heredar propiedades de varias clases."
+   ],
+   "answer": 2
+  },
+  {
+   "q": "16. En el lenguaje JavaScript, ¿Cuál de las siguientes declaraciones define una variable?",
+   "options": [
+    "variable x;",
+    "new x = Variable();",
+    "var x;",
+    "define x;"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "17. En el lenguaje C, ¿Qué es un bucle do-while?",
+   "options": [
+    "Un bucle que se ejecuta al menos una vez",
+    "Un bucle que se ejecuta mientras la condición sea verdadera",
+    "Un bucle que repite un bloque de código un número específico de veces",
+    "Un bucle que se ejecuta solo si una condición es verdadera"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "18. ¿Cuál es el estado en el que un proceso está esperando a que se le asigne tiempo de ejecución?",
+   "options": [
+    "Inactivo",
+    "Listo",
+    "En ejecución",
+    "Finalizado"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "19. ¿Cuál de los siguientes conceptos de diseño alude a la estructura general del diseño y a las formas en las que da integridad conceptual a un sistema?",
+   "options": [
+    "Abstracción",
+    "Arquitectura",
+    "Modularidad",
+    "Patrones"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "20. Según el modelo de referencia OSI, ¿Qué capa se encarga de la compresión y encriptación de datos?",
+   "options": [
+    "Capa de red",
+    "Capa de transporte",
+    "Capa de presentación",
+    "Capa de Sesión"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "21. En SQL, ¿Cuál es el función de la cláusula LIMIT?",
+   "options": [
+    "Filtrar filas basándose en una condición",
+    "Limitar el número de filas devueltas por una consulta",
+    "Ordenar filas",
+    "Agrupar filas basándose en una columna"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "22. ¿Cuál es la función principal de un sistema de nombres de dominio (DNS)?",
+   "options": [
+    "Asignar direcciones IP dinámicamente.",
+    "Traducir nombres de dominio a direcciones IP.",
+    "Establecer conexiones seguras en una red.",
+    "Gestionar el tráfico de red."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "23. ¿Qué es un ataque de \"phishing\"?",
+   "options": [
+    "Sobrecarga intencional de recursos de red.",
+    "Interceptación de comunicaciones entre dos partes.",
+    "Envío masivo de mensajes no deseados.",
+    "Engaño para obtener información confidencial mediante la suplantación de identidad."
+   ],
+   "answer": 3
+  },
+  {
+   "q": "24. En HTML ¿Qué atributo se utiliza para especificar la dirección de un enlace?",
+   "options": [
+    "url",
+    "href",
+    "src",
+    "link"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "25. En el desarrollo de software, ¿Qué es el concepto de \"Agile\" (Ágil)?",
+   "options": [
+    "Un conjunto de principios de diseño propuestos por Robert C. Martin.",
+    "Una técnica para el diseño responsivo de sitios web.",
+    "Un modelo de programación asíncrona.",
+    "Un enfoque de desarrollo que promueve la entrega continua de software de alta calidad, adaptándose a cambios y respondiendo rápidamente a los comentarios."
+   ],
+   "answer": 3
+  },
+  {
+   "q": "26. ¿Cuál es el estado en el que un proceso está esperando a que se libere un recurso?",
+   "options": [
+    "Inactivo",
+    "Listo",
+    "En ejecución",
+    "Bloqueado"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "27. ¿Qué función cumple un firewall en una red informática?",
+   "options": [
+    "Almacenar datos",
+    "Controlar el acceso no autorizado",
+    "Enviar correos electrónicos",
+    "Imprimir documentos"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "28. En el lenguaje NATURAL, ¿Cuál es la diferencia entre ESCAPE BOTTOM y ESCAPE ROUTINE?",
+   "options": [
+    "Ninguna, son sinónimos",
+    "ESCAPE BOTTOM se utiliza para salir de un bucle y ESCAPE ROUTINE para salir de un subprograma",
+    "ESCAPE BOTTOM se utiliza en estructuras condicionales y ESCAPE ROUTINE en bucles",
+    "No hay comando ESCAPE ROUTINE en Natural"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "29. ¿Cuál de las siguientes transiciones entre estados no es posible?",
+   "options": [
+    "De Listo a Ejecutando",
+    "De Nuevo a Ejecutando",
+    "De Ejecutando a Listo",
+    "De Ejecutando a Bloqueado"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "30. ¿Cuál es la ventaja principal de la topología de red en estrella?",
+   "options": [
+    "Resistencia a fallos de dispositivos individuales.",
+    "Bajo costo de implementación.",
+    "Facilidad de agregar nuevos dispositivos a la red.",
+    "Conexión directa entre todos los dispositivos."
+   ],
+   "answer": 0,
+   "explanation": "⚠ Respuesta dudosa (el PDF no trae solucionario): también podría defenderse la c (facilidad de añadir dispositivos)."
+  },
+  {
+   "q": "31. ¿Qué es el protocolo FTP (File Transfer Protocol) utilizado comúnmente en redes?",
+   "options": [
+    "Un protocolo para asignar direcciones IP dinámicamente.",
+    "Un protocolo de enrutamiento.",
+    "Un protocolo para transferir archivos entre dispositivos.",
+    "Un protocolo de seguridad para comunicaciones web."
+   ],
+   "answer": 2
+  },
+  {
+   "q": "32. ¿Cuál de las políticas de planificación siguientes tiene posibilidad de inanición?",
+   "options": [
+    "FCFS",
+    "Round robin",
+    "SPN",
+    "HRRN"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "33. ¿Cuál es la diferencia entre la memoria RAM y la memoria ROM en un sistema informático?",
+   "options": [
+    "La memoria RAM es volátil y se borra al apagar la computadora, mientras que la memoria ROM es no volátil y retiene la información.",
+    "La memoria RAM es solo de lectura, mientras que la memoria ROM permite lectura y escritura.",
+    "La memoria RAM es utilizada para almacenar datos a largo plazo, mientras que la memoria ROM es utilizada para almacenar datos temporales.",
+    "La memoria RAM es más rápida que la memoria ROM."
+   ],
+   "answer": 0
+  },
+  {
+   "q": "34. ¿Cuál es el resultado de la siguiente consulta SQL?\nSELECT AVG(salario) FROM empleados WHERE departamento='Ventas';",
+   "options": [
+    "La suma de los salarios de todos los empleados en el departamento de Ventas",
+    "El promedio de los salarios de todos los empleados en el departamento de Ventas",
+    "El salario mínimo de todos los empleados en el departamento de Ventas",
+    "El salario máximo de todos los empleados en el departamento de Ventas"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "35. En el ámbito de las bases de datos, ¿qué es la consistencia ACID?",
+   "options": [
+    "Un conjunto de reglas para la creación de interfaces gráficas.",
+    "Una técnica para el diseño responsivo de sitios web.",
+    "Un modelo de programación asíncrona.",
+    "Un conjunto de propiedades que garantizan la consistencia de una transacción: Atomicidad, Consistencia, Aislamiento y Durabilidad."
+   ],
+   "answer": 3
+  },
+  {
+   "q": "36. En HTML, ¿Qué elemento se utiliza para crear una línea horizontal en una página web?",
+   "options": [
+    "<line>",
+    "<hr>",
+    "<horizontal>",
+    "<linebreak>"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "37. En el lenguaje C, ¿Cuál es la forma correcta de declarar una constante?",
+   "options": [
+    "#define radio 3.01",
+    "const radio = 3.01;",
+    "constant radio = 3.01;",
+    "const float radio = 3.01;"
+   ],
+   "answer": 0,
+   "explanation": "⚠ Respuesta dudosa (el PDF no trae solucionario): la d también es válida en C; la a es la forma clásica."
+  },
+  {
+   "q": "38. En HTML, ¿Cuál es la función del elemento <footer>?",
+   "options": [
+    "Crear un encabezado",
+    "Definir un párrafo",
+    "Agrupar enlaces de navegación",
+    "Representar el pie de página de una sección o página"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "39. En el lenguaje C, ¿Qué función se utiliza para leer una cadena de caracteres desde un archivo?",
+   "options": [
+    "read()",
+    "fgets()",
+    "scanfile()",
+    "readfile()"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "40. Según el modelo de referencia OSI, ¿Cuál es la función principal del protocolo ICMP?",
+   "options": [
+    "Transferencia segura de archivos",
+    "Diagnóstico y gestión de errores",
+    "Enrutamiento dinámico",
+    "Acceso remoto"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "41. En el lenguaje C, ¿Qué hace el operador \"&\" cuando se utiliza con variables?",
+   "options": [
+    "Concatena dos cadenas",
+    "Accede a la dirección de memoria de una variable",
+    "Realiza una operación de AND lógico",
+    "Multiplica dos números"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "42. ¿Qué ocurre según se desciende en la jerarquía de memoria?",
+   "options": [
+    "Aumento del coste por bit",
+    "Disminución de la capacidad",
+    "Aumento del tiempo de acceso",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "43. En el contexto de la programación web, ¿Qué es una \"cookie\"?",
+   "options": [
+    "Una técnica para el diseño responsivo de sitios web.",
+    "Un lenguaje de programación para el desarrollo web.",
+    "Una pequeña cantidad de datos almacenados en el navegador del usuario.",
+    "Un conjunto de reglas para la creación de interfaces gráficas."
+   ],
+   "answer": 2
+  },
+  {
+   "q": "44. En HTML, ¿Cuál es la función principal del elemento <ul>?",
+   "options": [
+    "Definir una lista ordenada",
+    "Definir un párrafo",
+    "Crear una lista desordenada",
+    "Establecer un enlace"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "45. ¿Cuál es la función principal del kernel en un sistema operativo?",
+   "options": [
+    "Gestionar la interfaz de usuario.",
+    "Administrar el hardware y proporcionar servicios a las aplicaciones.",
+    "Ejecutar programas de aplicación.",
+    "Controlar el acceso a Internet."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "46. ¿Qué tipo de pruebas son las pruebas alfa y beta?",
+   "options": [
+    "Prueba del sistema",
+    "Prueba de validación",
+    "Prueba de integración",
+    "Prueba de unidad"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "47. En el lenguaje NATURAL, ¿Cuál es la función del comando INPUT?",
+   "options": [
+    "Recoger datos de un archivo",
+    "Solicitar entrada del usuario",
+    "Definir una variable de entrada",
+    "Iniciar la entrada de datos desde un dispositivo"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "48. Según el modelo de referencia OSI, ¿Cuál es la función principal de la capa de transporte?",
+   "options": [
+    "Enrutamiento",
+    "Establecer, mantener y finalizar conexiones",
+    "Determinar la ruta más corta en la red",
+    "Transmitir bits de información"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "49. En SQL, ¿Cuál de las siguientes cláusulas se utiliza para filtrar filas en una consulta?",
+   "options": [
+    "SELECT",
+    "FROM",
+    "WHERE",
+    "GROUP BY"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "50. En el lenguaje NATURAL, ¿Cuál es la función de la cláusula ON EXCEPTION?",
+   "options": [
+    "Manejar condiciones de error",
+    "Definir excepciones personalizadas",
+    "No hay cláusula ON EXCEPTION en Natural",
+    "Iniciar un bucle de excepción"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "51. En HTML, ¿Cuál es la función del elemento <div>?",
+   "options": [
+    "Crear una lista",
+    "Definir un enlace",
+    "Agrupar contenido para aplicar estilos o scripts",
+    "Insertar una imagen"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "52. ¿Qué es la topología de red de anillo?",
+   "options": [
+    "Todos los dispositivos están conectados a un punto central.",
+    "Los dispositivos están conectados en una cadena cerrada.",
+    "La conexión entre dispositivos forma un patrón de malla.",
+    "La red se organiza en capas jerárquicas."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "53. En el lenguaje C, ¿Cuál es el operador de asignación compuesta para sumar y asignar?",
+   "options": [
+    "+=",
+    "=+",
+    "++",
+    "+-"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "54. ¿Qué es el enmascaramiento de subred (subnetting) en redes IP?",
+   "options": [
+    "Asignación dinámica de direcciones IP.",
+    "División de una red en subredes más pequeñas.",
+    "Encriptación de datos en una red.",
+    "Filtrado de tráfico no deseado."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "55. ¿Qué es la fragmentación de disco y cómo afecta al rendimiento de un sistema operativo?",
+   "options": [
+    "La fragmentación de disco es la distribución física no contigua de archivos, afectando el rendimiento al aumentar el tiempo de acceso a los datos.",
+    "La fragmentación de disco mejora el rendimiento al organizar los archivos en bloques más pequeños.",
+    "La fragmentación de disco es un proceso necesario para la instalación de nuevos programas.",
+    "La fragmentación de disco no tiene impacto en el rendimiento del sistema operativo."
+   ],
+   "answer": 0
+  },
+  {
+   "q": "56. ¿Cuál es la función de las pruebas unitarias en el desarrollo del software?",
+   "options": [
+    "Garantizar que una aplicación sea completamente a prueba de errores.",
+    "Validar que un sistema funciona como un todo integrado.",
+    "Verificar el correcto funcionamiento de componentes individuales de código.",
+    "Optimizar el rendimiento de una aplicación."
+   ],
+   "answer": 2
+  },
+  {
+   "q": "57. En HTML, ¿Cuál es la función principal del elemento <p>?",
+   "options": [
+    "Crear un párrafo",
+    "Insertar una imagen",
+    "Definir un encabezado",
+    "Establecer estilos de página"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "58. En el lenguaje Natural, ¿qué es la cláusula VIEW?",
+   "options": [
+    "Una instrucción para cambiar la vista del programa",
+    "Una manera de acceder a la base de datos Adabas",
+    "Una declaración para definir vistas en la pantalla",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "59. Según el modelo de referencia OSI, ¿Qué capa se encarga de la segmentación y reensamblaje de datos?",
+   "options": [
+    "Capa de red",
+    "Capa de transporte",
+    "Capa de enlace",
+    "Capa de sesión"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "60. En el contexto de la Base de datos ADABAS, ¿Qué hace la función ISN?",
+   "options": [
+    "Calcula la suma de números",
+    "Obtiene el número interno de secuencia de un registro en una base de datos Adabas",
+    "Verifica si una variable es nula",
+    "No existe la función ISN en Adabas"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "61. En el lenguaje C, ¿Para qué se utiliza la función scanf?",
+   "options": [
+    "Para imprimir en la consola",
+    "Para leer datos desde la consola",
+    "Para reservar memoria dinámica",
+    "Para realizar operaciones matemáticas"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "62. ¿Qué es un sistema operativo multiprocesador?",
+   "options": [
+    "Un sistema que permite la ejecución de múltiples programas simultáneamente.",
+    "Un sistema operativo de 32 bits.",
+    "Un sistema operativo diseñado para un único núcleo de procesador.",
+    "Un sistema que utiliza varios núcleos de procesador."
+   ],
+   "answer": 3
+  },
+  {
+   "q": "63. Según el modelo de referencia OSI, ¿Cuál es el protocolo utilizado en la capa de transporte para la entrega no confiable de datos?",
+   "options": [
+    "TCP",
+    "UDP",
+    "IP",
+    "HTTP"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "64. Para que las clases de diseño estén bien formadas, ¿Cómo deben ser las características de acoplamiento y cohesión?",
+   "options": [
+    "Mucho acoplamiento y mucha cohesión",
+    "Mucho acoplamiento y poca cohesión",
+    "Poco acoplamiento y mucha cohesión",
+    "Poco acoplamiento y poca cohesión"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "65. ¿Qué capa se encarga del direccionamiento lógico y la fragmentación de datos?",
+   "options": [
+    "Capa de red",
+    "Capa de transporte",
+    "Capa de enlace de datos",
+    "Capa física"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "66. ¿Qué significa la sigla CPU?",
+   "options": [
+    "Central Processing Unit",
+    "Computer Personal Unit",
+    "Central Peripheral Unit",
+    "Control Panel Unit"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "67. ¿Qué función cumple un planificador de procesos en un sistema operativo?",
+   "options": [
+    "Gestionar la memoria virtual.",
+    "Administrar la ejecución de procesos y decidir cuál se ejecuta en un momento dado.",
+    "Controlar la impresión de documentos.",
+    "Gestionar el acceso a la red."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "68. ¿Cuál de los siguientes es un componente esencial de una computadora?",
+   "options": [
+    "Mouse",
+    "Altavoces",
+    "Procesador",
+    "Impresora"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "69. ¿Cuál de las siguientes técnicas de E/S no utiliza interrupciones?",
+   "options": [
+    "E/S programada",
+    "E/S dirigida por interrupciones",
+    "Acceso directo a memoria (DMA)",
+    "Todas utilizan interrupciones"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "70. ¿Qué es el protocolo HTTPS en el contexto de la comunicación web?",
+   "options": [
+    "Un protocolo para la transmisión de archivos multimedia.",
+    "Un formato de archivo utilizado para almacenar datos estructurados.",
+    "Un protocolo seguro para la transferencia de datos a través de la web.",
+    "Un estándar para la creación de páginas web interactivas."
+   ],
+   "answer": 2
+  },
+  {
+   "q": "71. [RESERVA] ¿Cuál es la función principal de la memoria caché en un sistema operativo?",
+   "options": [
+    "Almacenar programas de forma permanente.",
+    "Proporcionar almacenamiento de largo plazo.",
+    "Mejorar el rendimiento al almacenar copias de datos frecuentemente utilizados.",
+    "Coordinar la ejecución de procesos en un entorno de tiempo real."
+   ],
+   "answer": 2
+  },
+  {
+   "q": "72. [RESERVA] En el lenguaje Natural, ¿cuál es el propósito del comando READ?",
+   "options": [
+    "Leer un archivo secuencial",
+    "Realizar una operación matemática",
+    "Leer un registro de una base de datos Adabas",
+    "Iniciar un bucle de iteración"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "73. [RESERVA] En SQL, ¿Cuál es la función de la función de agregación COUNT?",
+   "options": [
+    "Calcular el promedio de una columna numérica",
+    "Contar el número de filas en un conjunto de resultados",
+    "Sumar los valores de una columna numérica",
+    "Encontrar el valor máximo en una columna"
+   ],
+   "answer": 1
+  }
+ ]
+}

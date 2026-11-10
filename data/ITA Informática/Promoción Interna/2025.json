@@ -1,0 +1,588 @@
+{
+ "title": "ITA Informática 2025 - Promoción Interna",
+ "questions": [
+  {
+   "q": "1. En SQL, ¿Cuál de los siguientes es un comando DML?",
+   "options": [
+    "CREATE INDEX",
+    "CREATE TABLE",
+    "SELECT",
+    "Todos los anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "2. ¿Qué es la dirección MAC?",
+   "options": [
+    "Una dirección IP",
+    "El nombre de usuario",
+    "El número de puerto",
+    "Un identificador único instalado por el fabricante"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "3. Dentro de un multiprocesador, ¿Cómo se denomina la gestión de múltiples procesos?",
+   "options": [
+    "Multiprogramación",
+    "Multiprocesamiento",
+    "Procesamiento distribuido",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "4. En SQL, ¿Qué diferencia hay entre UNION y UNION ALL?",
+   "options": [
+    "UNION ordena, UNION ALL no",
+    "UNION requiere ORDER BY, UNION ALL no",
+    "UNION elimina duplicados, UNION ALL no",
+    "UNION solo es para columnas iguales"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "5. En SQL, ¿Con qué operación del álgebra relacional se corresponde la cláusula FROM?",
+   "options": [
+    "Con la operación de proyección",
+    "Con la operación de producto cartesiano",
+    "Con el predicado",
+    "Con la operación de selección"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "6. ¿Cuál de las siguientes es una característica fundamental del modelo en cascada?",
+   "options": [
+    "Permite retrocesos entre fases",
+    "Implementación antes del diseño",
+    "Las fases se siguen secuencialmente sin solapamiento",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "7. ¿Cuál de las siguientes permite definir qué parte de la dirección IP corresponde a la red (netid) y cuál al host?",
+   "options": [
+    "Máscara de subred",
+    "Protocolo de enrutamiento",
+    "Dirección MAC",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "8. ¿Cuál es la diferencia principal entre los protocolos TCP y UDP?",
+   "options": [
+    "TCP es orientado a conexión y UDP es sin conexión",
+    "UDP es orientado a conexión y TCP es sin conexión",
+    "No hay diferencias significativas",
+    "TCP es un protocolo de la capa de transporte y UDP es un protocolo de la capa de red"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "9. En un modelo de proceso de cinco estados, ¿Qué transición describe el paso de un proceso desde \"Bloqueado\" a \"Listo\"?",
+   "options": [
+    "Es una transición que no se puede dar",
+    "Se agota el quantum de CPU",
+    "El proceso solicita una llamada al sistema",
+    "Se produce el evento por el que estaba esperando"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "10. Para una Base de Datos, ¿Qué es una transacción?",
+   "options": [
+    "Una unidad lógica de trabajo",
+    "Una copia de seguridad de la base de datos",
+    "Una consulta sencilla",
+    "Una actualización de un índice"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "11. ¿Cómo se denomina el módulo que intercambia el procesador de un proceso a otro?",
+   "options": [
+    "Traza",
+    "Scheduler",
+    "Dispatcher",
+    "Thread cycle"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "12. Un proceso en UNIX es un conjunto de estructuras de datos que están organizadas en tres partes: contexto a nivel de usuario, contexto de registros, y contexto a nivel de sistema. ¿Qué contiene el contexto a nivel de sistema?",
+   "options": [
+    "La información que necesita el sistema operativo para almacenar el proceso",
+    "La información que necesita el sistema operativo para manejar el proceso",
+    "Los elementos básicos de un programa de usuario que se pueden generar",
+    "La información de estado de procesador cuando un proceso está ejecutando"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "13. ¿Qué es el DDL?",
+   "options": [
+    "Lenguaje que permite la manipulación o procesamiento de objetos de la base de datos",
+    "Lenguaje que permite la definición o declaración de objetos de la base de datos",
+    "Ambas opciones",
+    "Ninguna de las opciones"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "14. En el diseño orientado a objetos, ¿Cómo se denomina la característica que hace que la única forma de acceder a los datos en un objeto sea invocando uno de los servicios del objeto?",
+   "options": [
+    "Instancia",
+    "Herencia",
+    "Encapsulación",
+    "Polimorfismo"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "15. ¿Cuál de las siguientes restricciones se especifican en relaciones individuales?",
+   "options": [
+    "Restricciones de clave",
+    "Restricciones de clave y de integridad de entidad",
+    "Restricciones de integridad de entidad",
+    "Restricciones de integridad referencial"
+   ],
+   "answer": 1,
+   "explanation": "⚠ Respuesta dudosa (el PDF no trae solucionario): la integridad referencial afecta a dos relaciones; clave e integridad de entidad sí van en una sola."
+  },
+  {
+   "q": "16. En el modelo de hilos, ¿Qué tiene cada hilo de un proceso?",
+   "options": [
+    "Su propio espacio de direcciones",
+    "Sus propios archivos abiertos, pero comparte las variables globales del proceso",
+    "Sus propias señales",
+    "Su propia pila y registros, pero comparte el espacio de direcciones del proceso"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "17. ¿Qué es la arquitectura Von Neumann?",
+   "options": [
+    "Arquitectura que utiliza memorias separadas para instrucciones y datos",
+    "Arquitectura paralela múltiple",
+    "Arquitectura que utiliza una memoria que almacena tanto programas como datos",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "18. ¿Cuál es la característica fundamental del modelo incremental de desarrollo de software?",
+   "options": [
+    "Un solo ciclo de desarrollo largo",
+    "Parte de un conjunto de requisitos que se mantienen durante todo el desarrollo",
+    "Entrega progresiva de versiones funcionales del producto",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "19. De los tres niveles de la Arquitectura de Bases de Datos, ¿Cuál se conoce como el nivel lógico de usuario?",
+   "options": [
+    "Nivel externo",
+    "Nivel interno",
+    "Nivel lógico",
+    "Nivel conceptual"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "20. ¿Qué es una red LAN?",
+   "options": [
+    "Red global que conecta continentes",
+    "Red celular para teléfonos",
+    "Red local que conecta dispositivos en un área geográfica limitada",
+    "Protocolo inalámbrico"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "21. ¿Qué es el protocolo FTP?",
+   "options": [
+    "Protocolo para correo electrónico",
+    "Protocolo de acceso seguro a red",
+    "Protocolo para transferencia de archivos",
+    "Protocolo para compartición de impresoras"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "22. En el modelo relacional, ¿Cómo se denomina el conjunto de valores permitidos de un atributo?",
+   "options": [
+    "Grado",
+    "Dominio",
+    "Tupla",
+    "Cardinalidad"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "23. ¿Cuál de las siguientes razones de cardinalidad no es posible?",
+   "options": [
+    "Cero a uno",
+    "Uno a uno",
+    "Varios a uno",
+    "Todas son posibles"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "24. En ingeniería del software, ¿Qué es el acoplamiento?",
+   "options": [
+    "El grado en el que un módulo se centra en hacer una sola cosa",
+    "El grado en el que un módulo está conectado con otros",
+    "El grado en el que un módulo realiza tareas muy diversas",
+    "El grado en el que un módulo es mas complejo"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "25. En el diseño, ¿Con qué dos criterios cualitativos se evalúa la independencia funcional?",
+   "options": [
+    "Cohesión y Polimorfismo",
+    "Cohesión y Ocultamiento",
+    "Cohesión y Herencia",
+    "Cohesión y Acoplamiento"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "26. ¿En cuál de las siguientes políticas de planificación se puede producir inanición?",
+   "options": [
+    "FCFS",
+    "SRT",
+    "Round Robin",
+    "HRRN"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "27. ¿Qué es un protocolo RIP?",
+   "options": [
+    "Protocolo de enrutamiento",
+    "Protocolo para transferencia de archivos",
+    "Protocolo para navegación segura",
+    "Protocolo para correos electrónicos"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "28. ¿Qué es un protocolo?",
+   "options": [
+    "Acuerdo entre las partes que se comunican para llevar a cabo la comunicación",
+    "Programa informático completo",
+    "Unidad de Hardware",
+    "Dirección IP"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "29. ¿Qué tipo de bus transmite la información entre los diferentes elementos del computador?",
+   "options": [
+    "Bus de direcciones",
+    "Bus de E/S",
+    "Bus de control",
+    "Bus de datos"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "30. En SQL, ¿Qué hace el comando ROLLBACK?",
+   "options": [
+    "Deshacer cambios de la transacción",
+    "Confirmar la transacción",
+    "Crear punto de guardado",
+    "Bloquear la tabla"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "31. \"SELECT COUNT(*) FROM empleado WHERE (Sueldo BETWEEN 30000 AND 50000)\", ¿Qué devuelve?",
+   "options": [
+    "Promedio de empleados con salario entre 30000 y 50000",
+    "Promedio de empleados con salario de 30000 y de 50000",
+    "Número de empleados con salario entre 30000 y 50000",
+    "Número de empleados con salario de 30000 y de 50000"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "32. ¿Cuál es la función de un protocolo de enrutamiento?",
+   "options": [
+    "Determinar las normas para la correcta codificación de los datos",
+    "Determinar las normas para mantener la seguridad de la red",
+    "Determinar las mejores rutas que van de los emisores a los receptores",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "33. ¿Cuál de los siguientes requisitos debe satisfacer la gestión de la memoria?",
+   "options": [
+    "Reubicación",
+    "Protección",
+    "Compartición",
+    "Todas las anteriores"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "34. ¿Qué es una VLAN?",
+   "options": [
+    "Tipo de cableado para redes",
+    "Red lógica que agrupa dispositivos independientemente de su ubicación fija",
+    "Protocolo de encriptación",
+    "Sistema operativo para servidores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "35. En UNIX, ¿En qué modo se ejecutan los procesos del sistema?",
+   "options": [
+    "Usuario",
+    "Núcleo",
+    "Swap",
+    "Zombie"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "36. ¿Para qué se utiliza la ALU?",
+   "options": [
+    "Operar sobre datos binarios",
+    "Interpretar las instrucciones del programa",
+    "Generar las señales de control necesarias",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "37. En un modelo de proceso de cinco estados, ¿Cómo indica el estado \"Saliente\" que está el proceso?",
+   "options": [
+    "Está esperando a que termine una operación de E/S",
+    "Ya no es elegible para ejecutarse y el sistema conserva temporalmente sus datos de control",
+    "Está listo para ejecutar cuando haya CPU",
+    "Es un proceso recién creado en disco"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "38. En el modelo Entidad-Relación, ¿Cómo se denomina a la clave, no necesariamente única, que se usa como medio de acceder a los registros?",
+   "options": [
+    "Clave candidata",
+    "Clave primaria",
+    "Clave alternativa",
+    "Clave secundaria"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "39. ¿Cuál es el objetivo principal de la revisión técnica formal en software?",
+   "options": [
+    "Detectar los errores antes de se pase a otra actividad",
+    "Añadir código sin control previo",
+    "Sumar documentación no revisada",
+    "Aumentar la complejidad del sistema"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "40. ¿En respuesta a qué, se originó el movimiento hacia el desarrollo basado en la reutilización de software?",
+   "options": [
+    "Demanda para reducir costes de producción",
+    "Demanda para reducir costes de mantenimiento",
+    "Demanda por entregar los sistemas con mayor rapidez",
+    "Todas las anteriores"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "41. En Bases de Datos, ¿Para qué se utiliza la desnormalización?",
+   "options": [
+    "Para eliminar redundancia de los datos en las tablas",
+    "Para ajustar el rendimiento de los sistemas",
+    "Para encriptar datos",
+    "Para dar mas seguridad a los datos almacenados"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "42. ¿Qué técnica de las siguientes se usa para obtener los requerimientos?",
+   "options": [
+    "Entrevistas",
+    "Diseño orientado a objetos",
+    "Compilación",
+    "Codificación"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "43. En SQL, ¿Se puede renombrar cualquier atributo que aparezca en el resultado de una consulta?",
+   "options": [
+    "No",
+    "Si, usando el calificador AS",
+    "Si, usando el calificador ALIAS",
+    "Si, usando el calificador RENAME"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "44. En Bases de Datos, ¿Qué es un índice de árbol B?",
+   "options": [
+    "Un índice denso dividido por ramas",
+    "Un índice con forma de un árbol equilibrado",
+    "Un tipo de tabla temporal para índices",
+    "Un archivo indexado de registro de errores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "45. ¿Qué es el protocolo SMTP?",
+   "options": [
+    "Protocolo que permite la transferencia de mensajes de correo electrónico",
+    "Protocolo que permite la solicitud y transferencia de documentos web",
+    "Protocolo de la capa física",
+    "Protocolo que permite la transferencia de archivos entre dos sistemas terminales"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "46. ¿Cuál es el objetivo principal del \"swapping\" (memoria de intercambio) de procesos?",
+   "options": [
+    "Sacar procesos de memoria principal para liberar espacio y mejorar el rendimiento del sistema",
+    "Acelerar las operaciones de E/S de disco",
+    "Reducir el número de estados de proceso",
+    "Evitar el uso de memoria virtual"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "47. En relación con las transacciones y el sistema de Base de Datos, ¿Qué asegura el cumplimiento de las propiedades ACID?",
+   "options": [
+    "La consistencia de los datos",
+    "La integridad de los datos",
+    "La durabilidad de los datos",
+    "La independencia de los datos"
+   ],
+   "answer": 1,
+   "explanation": "⚠ Respuesta dudosa (el PDF no trae solucionario): pregunta ambigua; se marca la b (integridad)."
+  },
+  {
+   "q": "48. ¿Qué significa CISC?",
+   "options": [
+    "Computer Integrated System Controller",
+    "Complex Instruction Set Computer",
+    "Central Integrated Signal Code",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "49. ¿Qué es el modelo OSI?",
+   "options": [
+    "Una arquitectura de red",
+    "Software para gestión de redes",
+    "Modelo de referencia para la conexión de sistemas abiertos",
+    "Un protocolo de la capa física"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "50. ¿Cuál es la función del protocolo DHCP?",
+   "options": [
+    "Asignar direcciones IP dinámicamente a dispositivos en la red",
+    "Establecer conexiones seguras",
+    "Habilitar la transferencia de archivos",
+    "Permitir la navegación web"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "51. ¿Cuál es el requisito básico para conseguir procesos concurrentes?",
+   "options": [
+    "Tener más memoria",
+    "Tener procesadores más rápidos",
+    "Tener más colas de procesos",
+    "Tener capacidad de cumplir la exclusión mutua"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "52. Cuando se analiza el rendimiento de sistemas de memoria o interconexión, ¿Cuál es el término que se refiere al tiempo que tarda el sistema en proporcionar los datos solicitados?",
+   "options": [
+    "Jitter",
+    "Ancho de banda",
+    "Tiempo de acceso",
+    "Latencia"
+   ],
+   "answer": 3,
+   "explanation": "⚠ Respuesta dudosa (el PDF no trae solucionario): también podría defenderse \"Tiempo de acceso\" (c)."
+  },
+  {
+   "q": "53. Según la interacción de los procesos, ¿Cuál de las siguientes son posibles grados de percepción de los procesos entre sí?",
+   "options": [
+    "Procesos que no se perciben entre sí",
+    "Procesos que se perciben indirectamente entre sí",
+    "Procesos que se perciben directamente entre sí",
+    "Todos los anteriores"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "54. ¿Para qué se utilizan los diagramas de Entidad-Relación en el modelado de datos?",
+   "options": [
+    "Para crear algoritmos detallados",
+    "Para mostrar mensajes de error",
+    "Para optimizar compiladores",
+    "Para representar objetos y sus relaciones en el sistema"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "55. En redes, ¿Qué es un firewall?",
+   "options": [
+    "Programa para transferir archivos",
+    "Tipo de virus",
+    "Cable de conexión",
+    "Dispositivo o Software que controla y filtra tráfico de red para proteger sistemas"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "56. [RESERVA] En redes, ¿Cuál es la función de una puerta de enlace (Gateway)?",
+   "options": [
+    "Transmitir datos dentro de la misma red",
+    "Servir como servidor de Base de Datos",
+    "Conectar dos o más redes y proveer la traducción necesaria",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "57. [RESERVA] ¿Cuál de las siguientes es una característica fundamental de los procesos ágiles?",
+   "options": [
+    "Documentación exhaustiva",
+    "Planeación incremental",
+    "Planificación rígida",
+    "Desarrollo rápido sin control"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "58. [RESERVA] ¿Cuál de los siguientes tipos de red es generalmente más extenso geográficamente?",
+   "options": [
+    "LAN",
+    "MAN",
+    "WAN",
+    "Todas ocupan un área geográfica similar"
+   ],
+   "answer": 2
+  }
+ ]
+}
