@@ -6,7 +6,7 @@ services:
     ports:
       - "8080:8080"          # mejor: "192.168.1.50:8080:8080" (IP LAN de tu servidor)
     volumes:
-      - ./data:/data          # tus quizzes: son archivos .json normales
+      - ./data:/data          # tus tests: carpetas y .json normales
     environment:
       # - ADMIN_PASS=cambiame  # opcional: pide contraseña (usuario: cualquiera)
       - TZ=Europe/Madrid
