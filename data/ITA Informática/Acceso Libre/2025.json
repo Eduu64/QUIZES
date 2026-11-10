@@ -1,0 +1,736 @@
+{
+ "title": "ITA Informática 2025 - Acceso Libre",
+ "questions": [
+  {
+   "q": "1. De acuerdo con lo dispuesto en el artículo 47 de la Ley 4/2023, de 28 de febrero, ¿es posible la rectificación de la mención registral al sexo de las personas?",
+   "options": [
+    "Sí, en cualquier caso.",
+    "Sí, trascurridos seis meses desde la inscripción en el Registro Civil.",
+    "Sí, transcurridos doce meses desde la inscripción en el Registro Civil.",
+    "No, en ningún caso."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "2. De acuerdo con lo establecido en el artículo 8 de la Constitución Española, qué norma jurídica regulará las bases de la organización militar:",
+   "options": [
+    "Ley Ordinaria.",
+    "Ley de Bases",
+    "Ley Orgánica",
+    "Ley Castrense"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "3. De acuerdo con lo establecido en el artículo 95 de la Constitución Española, la celebración de un tratado internacional que contengan estipulaciones contrarias a la Constitución Española:",
+   "options": [
+    "Exigirá la previa revisión constitucional",
+    "Deberá informarse inmediatamente al Congreso y Senado",
+    "No puede celebrarse en ningún caso",
+    "Deberá ser aprobado por las Cortes Generales con mayoría cualificada."
+   ],
+   "answer": 0
+  },
+  {
+   "q": "4. De acuerdo con lo establecido en el artículo 11 de la Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno, el Portal de la Transparencia contendrá información publicada de acuerdo con las prescripciones técnicas que se establezcan reglamentariamente que deberán adecuarse a:",
+   "options": [
+    "Principio de accesibilidad.",
+    "Principio de interoperabilidad",
+    "Principio de reutilización",
+    "Todas las respuestas anteriores son correctas."
+   ],
+   "answer": 3
+  },
+  {
+   "q": "5. El Arrendamiento, con o sin opción de compra, de productos muebles constituye un contrato de:",
+   "options": [
+    "Suministro",
+    "Servicios",
+    "Concesión de servicios",
+    "Obra."
+   ],
+   "answer": 0
+  },
+  {
+   "q": "6. Cuando el contratista, por causas imputables al mismo, hubiere incumplido parcialmente la ejecución de las prestaciones definidas en el contrato, la Administración podrá optar, atendidas las circunstancias del caso, por:",
+   "options": [
+    "Su resolución o por la imposición de las penalidades que, para tales supuestos, se determinen en el pliego de prescripciones técnicas generales o en el documento descriptivo.",
+    "Su resolución o por la imposición de las penalidades que, para tales supuestos, se determinen en el pliego de cláusulas administrativas particulares o en el documento descriptivo.",
+    "Su resolución o por la imposición de las penalidades que, para tales supuestos, se determinen en el pliego de cláusulas administrativas generales o en el documento descriptivo.",
+    "Su resolución o por la imposición de las penalidades que, para tales supuestos, se determinen en el pliego de prescripciones técnicas particulares o en el documento descriptivo."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "7. Las resoluciones administrativas que vulneren lo establecido en una disposición reglamentaria, así como aquellas que incurran en alguna de las causas recogidas en el artículo 47 de la Ley 39/2015, serán:",
+   "options": [
+    "Ejecutivas pero recurribles.",
+    "Anulables.",
+    "Suspendidas.",
+    "Nulas."
+   ],
+   "answer": 3
+  },
+  {
+   "q": "8. Los organismos autónomos, entidades públicas empresariales y las agencias estatales forman parte de:",
+   "options": [
+    "La Administración Periférica.",
+    "Del sector público institucional.",
+    "De consorcios de la Administración General del Estado.",
+    "De Fondos sin personalidad jurídica."
+   ],
+   "answer": 1
+  },
+  {
+   "q": "9. ¿Qué significa RISC?",
+   "options": [
+    "Registro Intermedio del Sistema de Circuitos",
+    "Reserved Instruction System Code",
+    "Redundant Internal System Controller",
+    "Computador de Repertorio de Instrucciones Reducido"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "10. En relación con las propiedades ACID de las transacciones, ¿Cuál de estas propiedades garantiza que, o bien todas las operaciones de la transacción se realizan adecuadamente o ninguna de ellas?",
+   "options": [
+    "Aislamiento",
+    "Consistencia",
+    "Atomicidad",
+    "Durabilidad"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "11. En SQL, ¿Cómo se llama la técnica para evaluar una consulta con una subconsulta anidada?",
+   "options": [
+    "Jerarquía de subconsultas",
+    "Evaluación correlacionada",
+    "Optimización de subconsultas",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "12. ¿Qué es un firewall?",
+   "options": [
+    "Protocolo para correo electrónico",
+    "Dirección IP pública",
+    "Sistema de seguridad que filtra tráfico de red para proteger recursos",
+    "Entorno de desarrollo"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "13. ¿Qué es la arquitectura Harvard?",
+   "options": [
+    "Arquitectura que utiliza memorias separadas para instrucciones y datos",
+    "Arquitectura Von Neumann clásica",
+    "Arquitectura que utiliza una memoria que almacena tanto programas como datos",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "14. Para un computador monotarea, si se mejora uno de sus componentes, ¿Por qué está limitada la ganancia de rendimiento del sistema completo, según la ley de Amdahl?",
+   "options": [
+    "Por el coste de dicho componente respecto del sistema completo",
+    "Por la diferencia en cuanto a capacidad de tráfico soportado entre el componente mejorado y el anterior",
+    "Por la fracción de tiempo que se utiliza dicho componente",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "15. ¿Qué es el DML?",
+   "options": [
+    "Lenguaje que permite la manipulación o procesamiento de objetos de la base de datos",
+    "Lenguaje que permite la definición o declaración de objetos de la base de datos",
+    "Ambas opciones",
+    "Ninguna de las opciones"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "16. ¿Qué contiene el bloque de control de procesos?",
+   "options": [
+    "Toda la información sobre un proceso que necesita el Sistema Operativo",
+    "El estado en que se encuentra un proceso",
+    "El identificador de todos los procesos en estado Listo",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "17. ¿Qué indica el criterio de cohesión en el diseño de módulos?",
+   "options": [
+    "El grado en el que un módulo realiza tareas muy diversas",
+    "El grado en el que un módulo está conectado con otros",
+    "El grado en el que un módulo es más complejo",
+    "El grado en el que un módulo se centra en hacer una sola cosa"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "18. ¿Qué algoritmo de planificación selecciona para ejecutar el proceso en estado \"listo\" que lleva más tiempo de espera (independientemente de cómo sea el proceso)?",
+   "options": [
+    "Round Robin",
+    "SRT",
+    "FCFS",
+    "SPN"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "19. ¿Cuál de los siguientes no es un modo de acceso a los registros de un archivo?",
+   "options": [
+    "Acceso secuencial",
+    "Acceso directo",
+    "Acceso por índice",
+    "Todos los anteriores son modos de acceso a los registros de un archivo"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "20. En el diagrama Entidad-Relación, como representación del modelado de requerimientos, ¿Qué es un atributo en un objeto?",
+   "options": [
+    "Una entidad externa",
+    "Una propiedad del objeto",
+    "Un evento",
+    "Una unidad organizacional"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "21. ¿Qué tipo de bus gestiona la transmisión de información dentro del computador?",
+   "options": [
+    "Bus de control",
+    "Bus de direcciones",
+    "Bus de datos",
+    "Bus de E/S"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "22. ¿Qué ventaja ofrecen los hilos frente a crear múltiples procesos independientes?",
+   "options": [
+    "Son más independientes",
+    "Son siempre propiedad de un usuario",
+    "Tienen diferentes espacios de direcciones",
+    "Comparten recursos dentro de un mismo proceso"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "23. En SQL, ¿Qué JOIN devuelve todas las filas de la tabla izquierda y las coincidentes de la tabla derecha?",
+   "options": [
+    "INNER JOIN",
+    "LEFT OUTER JOIN",
+    "RIGHT OUTER JOIN",
+    "FULL OUTER JOIN"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "24. En un sistema multiprogramado de un único procesador, ¿Qué problema surge cuando dos procesos comparten una variable global sin protección?",
+   "options": [
+    "Interbloqueo",
+    "Inanición",
+    "Thrashing",
+    "El resultado depende del orden de interleaving de sus instrucciones"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "25. En SQL, ¿Con qué operación del álgebra relacional se corresponde la cláusula SELECT?",
+   "options": [
+    "Con el predicado",
+    "Con la operación producto cartesiano",
+    "Con la operación de proyección",
+    "Con la operación de selección"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "26. ¿Cuál de los siguientes no es un medio de transmisión guiado?",
+   "options": [
+    "Medio magnético",
+    "Transmisión inalámbrica",
+    "Par trenzado",
+    "Cable coaxial"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "27. En el modelo relacional, ¿Qué es una vista?",
+   "options": [
+    "Una tabla virtual",
+    "Una copia física de una tabla",
+    "Una copia de seguridad del sistema",
+    "Un archivo externo asociado a la base de datos"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "28. ¿Qué función tiene el protocolo TCP en redes?",
+   "options": [
+    "Transmitir datos sin control de errores",
+    "Proporcionar comunicación confiable y orientada a conexión",
+    "Protocolo de nivel físico",
+    "Servir solo para redes inalámbricas"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "29. ¿Qué es una máscara de subred?",
+   "options": [
+    "La dirección del router",
+    "Define qué parte de una dirección IP corresponde a la netid y cuál al hostid",
+    "La dirección física de la tarjeta de red",
+    "Tipo de conexión inalámbrica"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "30. ¿Qué es la ALU?",
+   "options": [
+    "La memoria principal",
+    "Unidad de control",
+    "Componente que realiza operaciones de aritmética de enteros y lógicas",
+    "Almacenamiento secundario"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "31. ¿Qué es una \"condición de carrera\"?",
+   "options": [
+    "Cuando un proceso se queda sin memoria",
+    "Un proceso que termina prematuramente",
+    "Situación donde múltiples procesos leen/escriben datos compartidos y el resultado depende del orden de ejecución",
+    "Falta de CPU disponible"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "32. ¿Qué cláusula SQL se utiliza para especificar condiciones sobre grupos en lugar de filas individuales?",
+   "options": [
+    "WHERE",
+    "GROUP BY",
+    "HAVING",
+    "ORDER BY"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "33. En el modelo relacional, ¿Cómo se llama al número de columnas en una tabla?",
+   "options": [
+    "Atributos",
+    "Registros",
+    "Grado de la relación",
+    "Cardinalidad"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "34. ¿Cuál de las siguientes condiciones especifican una restricción de integridad referencial entre dos esquemas de relación?",
+   "options": [
+    "Las condiciones de una FOREIGN KEY",
+    "Las condiciones de una PRIMARY KEY",
+    "Las condiciones de UNIQUE",
+    "Las condiciones del CHECK"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "35. ¿Qué asegura el protocolo UDP?",
+   "options": [
+    "Comunicación sin conexión y no confiable",
+    "Entrega garantizada de datos",
+    "Seguridad de las transmisiones",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "36. ¿Qué es un protocolo orientado a conexión?",
+   "options": [
+    "Protocolo sin control de errores",
+    "Protocolo usado para voz solamente",
+    "Protocolo desfasado",
+    "Protocolo que establece una conexión antes de transmitir datos"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "37. ¿Qué protocolo se encarga de traducir direcciones IP en direcciones MAC?",
+   "options": [
+    "DHCP",
+    "FTP",
+    "DNS",
+    "ARP"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "38. ¿Qué es el \"livelock\"?",
+   "options": [
+    "Procesos que terminan prematuramente",
+    "Procesos bloqueados permanentemente",
+    "Procesos con quantum muy pequeño",
+    "Procesos que cambian continuamente de estado, respondiendo a otros sin progreso útil"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "39. El modelado de sistemas es el proceso para desarrollar, ¿Qué modelos?",
+   "options": [
+    "Modelos concretos de un sistema",
+    "Modelos específicos de pruebas de un sistema",
+    "Modelos abstractos de un sistema",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "40. ¿Cuál de los siguientes eventos provoca habitualmente la transición de \"Ejecutando\" a \"Bloqueado\"?",
+   "options": [
+    "Caducidad del quantum de CPU",
+    "Solicitud de E/S que requiere esperar a su finalización",
+    "Terminación normal del proceso",
+    "Admisión de un nuevo proceso"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "41. En una base de datos, ¿Qué garantizan las restricciones de integridad?",
+   "options": [
+    "Que las operaciones sobre la base de datos sigan la secuencialidad correcta",
+    "Que las modificaciones no den lugar a una pérdida de la consistencia de los datos",
+    "Que la concurrencia de las operaciones sobre la base de datos no produzcan operaciones incompletas",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "42. ¿Qué efecto sobre los procesos presenta el algoritmo FCFS?",
+   "options": [
+    "Inanición",
+    "Penaliza procesos cortos",
+    "Baja utilización de CPU",
+    "Penaliza procesos largos"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "43. ¿Cuál es el objetivo de la normalización de la BBDD?",
+   "options": [
+    "Minimizar la redundancia",
+    "Minimizar la coherencia",
+    "Maximizar el número de atributos",
+    "Maximizar la dependencia"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "44. ¿Cuál es la función principal del protocolo ICMP?",
+   "options": [
+    "Transferencia de archivos",
+    "Navegación web segura",
+    "Enrutar tráfico en redes inalámbricas",
+    "Enviar mensajes de control de internet"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "45. ¿Qué significa que un proceso UNIX esté en estado \"zombie\"?",
+   "options": [
+    "Que ha terminado pero su proceso padre aún no ha recogido su estado",
+    "Que se está ejecutando en modo kernel",
+    "Que está esperando memoria swap",
+    "Que está recién creado"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "46. En diseño de software, ¿Qué es la modularidad?",
+   "options": [
+    "Escribir todo el código en un único bloque",
+    "Separar funcionalidades relacionadas en módulos",
+    "Reutilizar solo librerías externas",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "47. ¿Qué técnica de gestión de memoria divide cada proceso en segmentos, y un proceso se carga, cargando todos sus segmentos en particiones dinámicas, no necesariamente contiguas?",
+   "options": [
+    "Segmentación fijo",
+    "Particionamiento fijo",
+    "Segmentación sencilla",
+    "Particionamiento sencillo"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "48. De los tres niveles de la Arquitectura de bases de datos, ¿Cuál se conoce como el nivel lógico de la comunidad?",
+   "options": [
+    "Nivel interno",
+    "Nivel externo",
+    "Nivel físico",
+    "Nivel conceptual"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "49. ¿Cuál de los siguientes factores de la calidad de McCall expresa el grado en que es posible controlar el acceso de personas no autorizadas al software o a los datos?",
+   "options": [
+    "Integridad",
+    "Confidencialidad",
+    "Confiabilidad",
+    "Corrección"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "50. El modelo relacional, ¿Cómo representa la base de datos?",
+   "options": [
+    "Como una colección de relaciones",
+    "Como una colección de valores",
+    "Como una colección de atributos",
+    "Como una colección de dominios"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "51. ¿Qué es el proceso del software?",
+   "options": [
+    "La programación del software",
+    "El conjunto de actividades relacionadas que conducen a la elaboración de un producto software",
+    "Las pruebas del software",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "52. En redes de computadores, ¿Qué es la topología?",
+   "options": [
+    "Protocolo de comunicación de la red",
+    "Tipo de cable que se va a usar en la red",
+    "La forma o mapa de interconexión entre los nodos de la red",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "53. En SQL, ¿Qué constructor devuelve true si la subconsulta que se le pasa como argumento no contiene tuplas duplicadas?",
+   "options": [
+    "Distinct",
+    "Unique",
+    "Some",
+    "Exists"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "54. ¿Qué es el protocolo DNS?",
+   "options": [
+    "Protocolo para correo electrónico",
+    "Sistema de seguridad de red",
+    "Protocolo para compartir archivos",
+    "Sistema que resuelve nombres de hosts a sus direcciones de red"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "55. En el modelo en cascada, ¿Cuál es el objetivo principal del análisis y definición de requerimientos?",
+   "options": [
+    "Obtener los servicios, restricciones y metas del sistema",
+    "Mejorar la implementación de las unidades del sistema",
+    "Identificar y describir las abstracciones fundamentales del sistema",
+    "Integrar y probar el sistema"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "56. ¿Cuántos bits tiene un byte?",
+   "options": [
+    "4 bit",
+    "8 bit",
+    "16 bit",
+    "32 bit"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "57. ¿Cuál es la función de un switch?",
+   "options": [
+    "Protocolo de transporte",
+    "Asigna direcciones IP",
+    "Conecta dispositivos y dirige tramas",
+    "Encripta datos de red"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "58. ¿Qué es una red de computadoras?",
+   "options": [
+    "Software para editar documentos",
+    "Conjunto de dispositivos interconectados",
+    "Hardware sin comunicación entre sí",
+    "Unidad independiente sin conexión"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "59. En el modelo de cinco estados de procesos, ¿Cómo está el proceso en el estado \"Nuevo\"?",
+   "options": [
+    "Ha sido creado y aún no ha sido admitido al conjunto de procesos ejecutables",
+    "Está listo para ejecutarse",
+    "Está siendo ejecutado por la CPU",
+    "Ha finalizado y está saliendo del sistema"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "60. ¿Cuál de las siguientes no es una dimensión de la calidad de Garvin?",
+   "options": [
+    "Calidad del empeño",
+    "Confiabilidad",
+    "Durabilidad",
+    "Estética"
+   ],
+   "answer": 0,
+   "explanation": "⚠ Respuesta dudosa (el PDF no trae solucionario): en Pressman las cuatro parecen dimensiones de Garvin; se marca la a por la errata \"empeño\"."
+  },
+  {
+   "q": "61. En un sistema monoprocesador, ¿Cuál es el número máximo de procesos simultáneamente en estado \"Ejecutando\"?",
+   "options": [
+    "Uno",
+    "Dos",
+    "Igual al número de núcleos",
+    "Ilimitado"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "62. ¿Qué determina cómo se empaquetan los datos que se utilizan en una red?",
+   "options": [
+    "El paquete",
+    "El protocolo",
+    "El marco",
+    "La célula"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "63. En el modelo OSI, ¿Qué gestiona la capa de enlace de datos?",
+   "options": [
+    "Control de acceso al medio y detección/corrección de errores de transmisión",
+    "Enrutamiento entre redes",
+    "Transferencia de datos entre aplicaciones",
+    "Control de protocolos HTTP"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "64. ¿Cuál de las siguientes no es una capa del modelo OSI?",
+   "options": [
+    "Capa de transporte",
+    "Capa de interred",
+    "Capa de aplicación",
+    "Capa de enlace de datos"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "65. ¿En qué arquitectura de red hay una dependencia de un servidor siempre activo?",
+   "options": [
+    "En la arquitectura P2P",
+    "En la arquitectura cliente-servidor",
+    "En ambas",
+    "En ninguna"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "66. ¿Qué es el protocolo HTTP?",
+   "options": [
+    "Protocolo que permite la transferencia de mensajes de correo electrónico",
+    "Protocolo que permite la solicitud y transferencia de documentos web",
+    "Protocolo de capa física",
+    "Protocolo que permite la transferencia de archivos entre dos sistemas terminales"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "67. ¿Cuál es la funcionalidad que tiene la fase de \"mantenimiento\" de software?",
+   "options": [
+    "Corregir fallos, adaptar o mejorar el software después de su entrega",
+    "Documentar el software sin hacer modificaciones",
+    "Sólo agregar funcionalidad nueva",
+    "Actualizar únicamente el hardware"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "68. ¿Qué tipo de pruebas demuestran la conformidad con los requerimientos del software?",
+   "options": [
+    "De validación",
+    "De recuperación",
+    "De caja blanca",
+    "De seguridad"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "69. ¿Qué es un requerimiento funcional?",
+   "options": [
+    "Especifica una función o servicio que el sistema debe proporcionar",
+    "Especifica una propiedad emergente del sistema",
+    "Especifica una restricción sobre la implementación del sistema",
+    "Ninguna de las anteriores"
+   ],
+   "answer": 0
+  },
+  {
+   "q": "70. En SQL, ¿Qué operador se puede utilizar para comparar un solo valor v con un conjunto o multiconjunto V?",
+   "options": [
+    "IN",
+    "ANY",
+    "SOME",
+    "Todos los anteriores"
+   ],
+   "answer": 3
+  },
+  {
+   "q": "71. [RESERVA] Cuando se analiza el rendimiento de sistemas de memoria o interconexión, ¿Cuál es el término que se refiere a la cantidad de información que puede proporcionar el sistema por unidad de tiempo?",
+   "options": [
+    "Jitter",
+    "Latencia",
+    "Ancho de banda",
+    "Tiempo de acceso"
+   ],
+   "answer": 2
+  },
+  {
+   "q": "72. [RESERVA] ¿Qué es una red PAN?",
+   "options": [
+    "Red de área amplia",
+    "Red de área personal",
+    "Red de área local",
+    "Red inalámbrica para ciudades"
+   ],
+   "answer": 1
+  },
+  {
+   "q": "73. [RESERVA] En SQL, ¿Cuál de los siguientes es un comando DDL?",
+   "options": [
+    "CREATE INDEX",
+    "INSERT",
+    "SELECT",
+    "Todos los anteriores"
+   ],
+   "answer": 0
+  }
+ ]
+}
