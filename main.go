@@ -3,7 +3,6 @@ package main
 import (
         "bytes"
         "compress/gzip"
-        "crypto/subtle"
         _ "embed"
         "encoding/json"
         "hash/fnv"
@@ -22,7 +21,6 @@ var indexHTML []byte
 
 var (
         root = env("DATA_DIR", "/data")
-        pass = os.Getenv("ADMIN_PASS") // opcional: si se define, pide contraseña (usuario: cualquiera)
         gz   []byte
         etag string
 )
@@ -257,14 +255,6 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 func wrap(next http.Handler) http.Handler {
         return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-                if pass != "" {
-                        _, p, ok := r.BasicAuth()
-                        if !ok || subtle.ConstantTimeCompare([]byte(p), []byte(pass)) != 1 {
-                                w.Header().Set("WWW-Authenticate", `Basic realm="quizbox"`)
-                                http.Error(w, "no autorizado", 401)
-                                return
-                        }
-                }
                 h := w.Header()
                 h.Set("X-Content-Type-Options", "nosniff")
                 h.Set("Referrer-Policy", "no-referrer")

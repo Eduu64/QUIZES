@@ -6,11 +6,10 @@ services:
     ports:
       - "8080:8080"          # mejor: "192.168.1.50:8080:8080" (IP LAN de tu servidor)
     volumes:
-      - ./data:/data          # tus tests: carpetas y .json normales
+      - ./data:/data         # tus tests: carpeta normal del host, PERSISTENTE
+                             # (sobrevive a reconstruir, actualizar o borrar el contenedor)
+      # Alternativa: volumen gestionado por Docker (comenta la línea de arriba y descomenta esta)
+      # - quizbox-data:/data
     environment:
-      # - ADMIN_PASS=cambiame  # opcional: pide contraseña (usuario: cualquiera)
       - TZ=Europe/Madrid
-    read_only: true
-    cap_drop: [ALL]
-    security_opt: [no-new-privileges:true]
-    mem_limit: 64m
+    mem_limit: 64m           # único límite que mantiene: consumo mínimo de RAM

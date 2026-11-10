@@ -16,7 +16,7 @@ Todo tu contenido son archivos normales dentro de una carpeta: subcarpetas y fic
 - 🌓 **Modo claro y oscuro** automáticos según tu sistema.
 - 📱 **Responsive**: pensada para usar desde el móvil a la vez que en el escritorio.
 - ⚡ **Muy ligera**: ~10 MB de RAM en uso, interfaz de menos de 9 KB comprimida, ETag para no reenviar nada que no cambie.
-- 🔒 **Segura por diseño**: rutas blindadas contra path traversal, cabeceras CSP y contraseña opcional.
+- 🏠 **Pensada para tu red de confianza**: sin cuentas, sin contraseñas, sin configuración. Las rutas están blindadas internamente contra `path traversal`.
 
 ## Despliegue con Docker
 
@@ -26,7 +26,22 @@ docker compose up -d --build
 
 La app queda servida en `http://localhost:8080`. Para exponerla solo en tu LAN, cambia el mapeo de puertos en `docker-compose.yml` (p. ej. `"192.168.1.50:8080:8080"`).
 
-El `docker-compose.yml` ya viene endurecido: sistema de archivos del contenedor de solo lectura (solo `/data` es escribible), `cap_drop: ALL`, `no-new-privileges`, límite de 64 MB de RAM y zona horaria `Europe/Madrid`.
+El compose no incluye ningún endurecimiento del contenedor (no hay `cap_drop`, ni rootfs de solo lectura, ni contraseñas): así el contenedor puede escribir en el volumen sin problemas de permisos aunque la carpeta del host pertenezca a tu usuario.
+
+### Persistencia de los tests
+
+Los tests viven en la carpeta `./data` **de tu servidor**, montada dentro del contenedor en `/data`. Eso significa que son **100% persistentes**: puedes reconstruir la imagen (`docker compose up -d --build`), actualizar la app, parar o borrar el contenedor, y tus carpetas y tests seguirán ahí, porque no se guardan dentro del contenedor sino en disco.
+
+Copia de seguridad: copia la carpeta `./data` y ya está.
+
+Si prefieres un volumen gestionado por Docker (p. ej. para no depender de la ruta del proyecto), comenta la línea `./data:/data` y descomenta `quizbox-data:/data` en `docker-compose.yml`; para llevar tus tests actuales al volumen:
+
+```bash
+docker compose up -d
+docker cp ./data/. quizbox:/data/
+```
+
+> Si algún día ves un error `permission denied` al crear o borrar, revisa quién es el dueño de `./data` en el host (`ls -la data`). Cualquier usuario normal de Docker (root del contenedor, o tu uid con Docker rootless) puede escribir en ella; basta con `sudo chown -R $(id -u):$(id -g) data` si viene de otra instalación.
 
 ### Sin Docker
 
@@ -43,9 +58,8 @@ DATA_DIR=./data ADDR=:8080 ./quizbox
 |---|---|---|
 | `DATA_DIR` | `/data` | Carpeta donde viven las carpetas y los tests |
 | `ADDR` | `:8080` | Dirección y puerto de escucha |
-| `ADMIN_PASS` | *(vacía)* | Si se define, pide contraseña por Basic Auth (el usuario puede ser cualquiera) |
 
-En el `Dockerfile` se ajustan además `GOGC`, `GOMEMLIMIT` y `GOMAXPROCS` para contener el consumo de memoria.
+En el `Dockerfile` se ajustan además `GOGC`, `GOMEMLIMIT` y `GOMAXPROCS` para contener el consumo de memoria. No hay más configuración: sin usuarios ni contraseñas.
 
 ## Formato de un test
 
@@ -92,5 +106,3 @@ La app se sirve de una API JSON sencilla por si quieres automatizar (scripts, si
 | POST | `/api/folder?path=…` | Crear una carpeta |
 | DELETE | `/api/folder?path=…` | Borrar una carpeta y todo su contenido |
 | POST | `/api/move?from=…&to=…` | Renombrar o mover |
-
-Con `ADMIN_PASS` definido, todas las peticiones (incluida la interfaz) exigen Basic Auth.
