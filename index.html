@@ -80,7 +80,8 @@ dialog{border:1px solid var(--bd);border-radius:18px;background:var(--card);colo
 dialog::backdrop{background:#0008}
 dialog h3{margin:0 0 10px;font-size:17px;overflow-wrap:anywhere}
 .mi{display:block;width:100%;text-align:left;margin:6px 0;padding:12px 14px}.mi.dg{color:var(--ko)}
-select,textarea,input[type=file]{width:100%;font:inherit;color:inherit;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:9px 10px;margin:6px 0 10px}
+select,textarea,input[type=file],input[type=text]{width:100%;font:inherit;font-size:16px;color:inherit;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:9px 10px;margin:6px 0 10px}
+button.dg{background:var(--ko);border-color:var(--ko);color:#fff}
 textarea{min-height:130px;resize:vertical;font:12px ui-monospace,monospace}
 .lb{font-size:13px;color:var(--mu)}
 .acts{display:flex;gap:8px;justify-content:flex-end;margin-top:6px}
@@ -140,10 +141,13 @@ function remap(a,b){const n=new Set();for(const o of open)n.add(o===a?b:o.starts
 async function move(from,to){await api(`/api/move?from=${enc(from)}&to=${enc(to)}`,{method:'POST'});remap(from,to)}
 async function mv(from,toDir){const to=sub(toDir,bn(from));if(to===from)return;await move(from,to);if(toDir){open.add(toDir);saveOpen()}}
 const canDrop=(src,to)=>to!==par(src)&&to!==src&&!to.startsWith(src+'/');
-function newFolder(dir){const n=(prompt('Nombre de la carpeta')||'').trim().replace(/[\\/]+/g,'-');if(!n)return;
-  run(async()=>{await api('/api/folder?path='+enc(sub(dir,n)),{method:'POST'});if(dir){open.add(dir);saveOpen()}})}
-function rename(p,d){let n=(prompt('Nuevo nombre',d?bn(p):nm(p))||'').trim().replace(/[\\/]+/g,'-');if(!n)return;
-  const to=sub(par(p),n+(d?'':'.json'));if(to!==p)run(()=>move(p,to))}
+/* Diálogos propios: a diferencia de prompt()/confirm() nativos, funcionan siempre
+   (iframes embebidos, webviews, y aunque el navegador los bloquee). */
+function ask(h3,val,ok,cb,hint){dlg._cb=cb;sheet(`<h3>${E(h3)}</h3>${hint?`<p class="lb">${E(hint)}</p>`:''}<input type="text" id="inp" maxlength="80" autocomplete="off" spellcheck="false"${val?` value="${E(val)}"`:''} placeholder="Nombre"><div class="er" id="er"></div><div class="acts"><button data-m="cancel">Cancelar</button><button class="p" data-m="ok">${E(ok)}</button></div>`);
+  const i=$('#inp');i.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();dlg.querySelector('[data-m=ok]').click()}};i.focus();i.select()}
+function askOK(h3,ok,cb,dg){dlg._cb=cb;sheet(`<h3>${E(h3)}</h3><div class="acts" style="margin-top:14px"><button data-m="cancel">Cancelar</button><button class="p${dg?' dg':''}" data-m="ok">${E(ok)}</button></div>`)}
+function newFolder(dir){ask('Nueva carpeta','','Crear',n=>run(async()=>{await api('/api/folder?path='+enc(sub(dir,n)),{method:'POST'});if(dir){open.add(dir);saveOpen()}}),dir?'Se creará dentro de «'+dir+'»':'Se creará en Inicio')}
+function rename(p,d){ask('Renombrar',d?bn(p):nm(p),'Guardar',n=>{const to=sub(par(p),n+(d?'':'.json'));if(to!==p)run(()=>move(p,to))})}
 function menu(p,d){
   sheet(`<h3>${d?'📁':'📝'} ${E(d?bn(p):nm(p))}</h3>${d?'<button class="mi" data-m="up">Añadir tests aquí</button><button class="mi" data-m="nf">Nueva subcarpeta</button>':''}<button class="mi" data-m="rn">Renombrar</button><button class="mi" data-m="mv">Mover a…</button><button class="mi dg" data-m="rm">Borrar</button>`,p,d)}
 function moveDlg(p,d){
@@ -182,10 +186,13 @@ dlg.addEventListener('click',e=>{
   const m=b.dataset.m,p=dlg._p,d=dlg._d;
   if(m==='go')return doAdd().catch(x=>toast(x.message));
   if(m==='mv')return moveDlg(p,d);
+  if(m==='ok'){const cb=dlg._cb,i=$('#inp');let v=null;
+    if(i){v=i.value.trim().replace(/[\\/]+/g,'-');if(!v){$('#er').textContent='Escribe un nombre';i.focus();return}}
+    dlg.close();return void(cb&&cb(v))}
   dlg.close();
   if(m==='up')addDlg(p);else if(m==='nf')newFolder(p);else if(m==='rn')rename(p,d);
   else if(m==='to')run(()=>mv(p,b.dataset.t));
-  else if(m==='rm'&&confirm(d?'¿Borrar la carpeta y TODO lo que contiene?':'¿Borrar este test?'))run(()=>api((d?'/api/folder':'/api/quiz')+'?path='+enc(p),{method:'DELETE'}));
+  else if(m==='rm')askOK(d?`¿Borrar la carpeta «${bn(p)}» y TODO lo que contiene?`:`¿Borrar el test «${nm(p)}»?`,'Borrar',()=>run(()=>api((d?'/api/folder':'/api/quiz')+'?path='+enc(p),{method:'DELETE'})),true);
 });
 
 /* ---- arrastrar y soltar (mover dentro de la app / soltar .json del ordenador) ---- */
@@ -254,8 +261,8 @@ function grade(i){T.c[i]=true;save();paint(i);result()}
 function gradeAll(){T.c=T.c.map(()=>true);save();for(let i=0;i<T.N;i++)paint(i);result();scrollTo({top:0,behavior:'smooth'})}
 function redo(){const f=new Set();T.c.forEach((_,i)=>{if(!same(T.a[i],T.k[i])){f.add(i);T.a[i]=[];T.c[i]=false;T.eye.delete(i)}});
   T.f=f;save();focus();for(let i=0;i<T.N;i++)paint(i);result();scrollTo(0,0)}
-function reset(){if(!confirm('¿Borrar tus respuestas de este test?'))return;
-  T.a=T.a.map(()=>[]);T.c=T.c.map(()=>false);T.eye.clear();T.f=null;LS.del('qb:'+T.p);focus();for(let i=0;i<T.N;i++)paint(i);result();scrollTo(0,0)}
+function reset(){askOK('¿Borrar tus respuestas de este test?','Borrar',()=>{
+  T.a=T.a.map(()=>[]);T.c=T.c.map(()=>false);T.eye.clear();T.f=null;LS.del('qb:'+T.p);focus();for(let i=0;i<T.N;i++)paint(i);result();scrollTo(0,0)},true)}
 
 app.addEventListener('change',e=>{
   const t=e.target;if(!T)return;
